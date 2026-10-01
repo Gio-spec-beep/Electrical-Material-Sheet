@@ -68,6 +68,11 @@ async function loadDatabase() {
     MATERIALS = database.materials;
     TOOLS = database.tools;
 
+    const versionElement = $("appVersion");
+    if (versionElement) {
+      versionElement.textContent = "Version " + (database.version || "1.0.0");
+    }
+
     console.log(
       `Database loaded successfully: ${MATERIALS.length} materials, ${TOOLS.length} tools`
     );
@@ -519,53 +524,50 @@ function renderTools() {
 ========================================================= */
 
 function renderPrices(search = "") {
-  const body =
-    $("priceBody");
+  const body = $("priceBody");
 
   if (!body) return;
 
-  const query =
-    search.toLowerCase().trim();
+  const query = search.toLowerCase().trim();
 
-  const filtered =
-    MATERIALS.filter(material => {
+  const filtered = MATERIALS.filter(material => {
+    const searchable = `
+      ${material.category || ""}
+      ${material.name || ""}
+      ${material.unit || ""}
+      ${material.notes || ""}
+    `.toLowerCase();
 
-      const searchable = `
-        ${material.category || ""}
-        ${material.name || ""}
-        ${material.unit || ""}
-        ${material.notes || ""}
-      `.toLowerCase();
+    return searchable.includes(query);
+  });
 
-      return searchable.includes(query);
-    });
+  body.innerHTML = filtered.map(material => {
+    const productUrl = material.url || "";
 
-  body.innerHTML =
-    filtered.map(material => `
-      <tr>
-
-        <td>
-          ${esc(material.category)}
-        </td>
-
-        <td>
+    const materialName = productUrl
+      ? `
+        <a
+          class="material-link"
+          href="${esc(productUrl)}"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Buy at Home Depot"
+        >
           ${esc(material.name)}
-        </td>
+        </a>
+      `
+      : esc(material.name);
 
-        <td>
-          ${esc(material.unit)}
-        </td>
-
-        <td>
-          ${money(material.price)}
-        </td>
-
-        <td>
-          ${esc(material.notes)}
-        </td>
-
+    return `
+      <tr>
+        <td>${esc(material.category)}</td>
+        <td>${materialName}</td>
+        <td>${esc(material.unit)}</td>
+        <td>${money(material.price)}</td>
+        <td>${esc(material.notes)}</td>
       </tr>
-    `).join("");
+    `;
+  }).join("");
 }
 
 /* =========================================================
