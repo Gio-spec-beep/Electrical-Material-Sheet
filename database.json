@@ -1,536 +1,660 @@
 {
   "materials": [
     {
-      "category": "Boxes",
-      "name": "4-inch Square EMT box",
+      "category": "Devices",
+      "name": "20A duplex receptacle",
       "unit": "each",
-      "price": 2.48,
-      "notes": ""
+      "price": 2,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/20A-duplex-receptacle"
     },
     {
-      "category": "Boxes",
-      "name": "4-inch Octagon EMT box",
+      "category": "Devices",
+      "name": "Duplex receptacle",
       "unit": "each",
-      "price": 2.62,
-      "notes": ""
+      "price": 0.56,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/Duplex-receptacle"
     },
     {
-      "category": "Boxes",
-      "name": "Single gang plastic box",
+      "category": "Devices",
+      "name": "GFCI receptacle",
       "unit": "each",
-      "price": 0.98,
-      "notes": ""
-    },
-    {
-      "category": "Boxes",
-      "name": "Double gang box",
-      "unit": "each",
-      "price": 4.24,
-      "notes": ""
-    },
-    {
-      "category": "Boxes",
-      "name": "Triple gang box",
-      "unit": "each",
-      "price": 4.96,
-      "notes": ""
-    },
-    {
-      "category": "Boxes",
-      "name": "Plastic round box",
-      "unit": "each",
-      "price": 4.84,
-      "notes": ""
-    },
-    {
-      "category": "Boxes",
-      "name": "4S box cover",
-      "unit": "each",
-      "price": 0.75,
-      "notes": ""
-    },
-    {
-      "category": "Boxes",
-      "name": "4-inch square blank cover",
-      "unit": "each",
-      "price": 0.75,
-      "notes": ""
-    },
-    {
-      "category": "Boxes",
-      "name": "Panel box / load center",
-      "unit": "each",
-      "price": 28.98,
-      "notes": ""
-    },
-    {
-      "category": "Covers",
-      "name": "Single switch cover",
-      "unit": "each",
-      "price": 0.5,
-      "notes": ""
-    },
-    {
-      "category": "Covers",
-      "name": "Duplex receptacle cover",
-      "unit": "each",
-      "price": 0.5,
-      "notes": ""
-    },
-    {
-      "category": "Covers",
-      "name": "Single pole + duplex combo cover",
-      "unit": "each",
-      "price": 2.22,
-      "notes": ""
-    },
-    {
-      "category": "Covers",
-      "name": "Double switch cover",
-      "unit": "each",
-      "price": 0.65,
-      "notes": ""
-    },
-    {
-      "category": "Covers",
-      "name": "Triple switch cover",
-      "unit": "each",
-      "price": 0.75,
-      "notes": ""
-    },
-    {
-      "category": "Covers",
-      "name": "GFCI cover",
-      "unit": "each",
-      "price": 1.25,
-      "notes": ""
-    },
-    {
-      "category": "Covers",
-      "name": "Blank cover",
-      "unit": "each",
-      "price": 0.5,
-      "notes": ""
-    },
-    {
-      "category": "Switches",
-      "name": "Single-pole switch",
-      "unit": "each",
-      "price": 0.75,
-      "notes": ""
+      "price": 14,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/GFCI-receptacle"
     },
     {
       "category": "Switches",
       "name": "3-way switch",
       "unit": "each",
       "price": 1.7,
-      "notes": ""
+      "notes": "",
+      "url": "https://www.homedepot.com/s/3-way-switch"
     },
     {
       "category": "Switches",
       "name": "4-way switch",
       "unit": "each",
       "price": 12.61,
-      "notes": ""
-    },
-    {
-      "category": "Switches",
-      "name": "Double-pole switch",
-      "unit": "each",
-      "price": 2.5,
-      "notes": ""
+      "notes": "",
+      "url": "https://www.homedepot.com/s/4-way-switch"
     },
     {
       "category": "Switches",
       "name": "Dimmer switch",
       "unit": "each",
       "price": 8,
-      "notes": ""
+      "notes": "",
+      "url": "https://www.homedepot.com/s/Dimmer-switch"
     },
     {
-      "category": "Receptacles",
-      "name": "Duplex receptacle",
+      "category": "Switches",
+      "name": "Double-pole switch",
       "unit": "each",
-      "price": 0.56,
-      "notes": ""
+      "price": 2.5,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/Double-pole-switch"
     },
     {
-      "category": "Receptacles",
-      "name": "GFCI receptacle",
+      "category": "Switches",
+      "name": "Single-pole switch",
       "unit": "each",
-      "price": 14,
-      "notes": ""
+      "price": 0.75,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/Single-pole-switch"
     },
     {
-      "category": "Receptacles",
-      "name": "20A duplex receptacle",
+      "category": "Boxes",
+      "name": "4-inch Octagon EMT box",
       "unit": "each",
-      "price": 2,
-      "notes": ""
+      "price": 2.62,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/4-inch-Octagon-EMT-box"
+    },
+    {
+      "category": "Boxes",
+      "name": "4-inch square blank cover",
+      "unit": "each",
+      "price": 0.75,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/4-inch-square-blank-cover"
+    },
+    {
+      "category": "Boxes",
+      "name": "4-inch Square EMT box",
+      "unit": "each",
+      "price": 2.48,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/4-inch-Square-EMT-box"
+    },
+    {
+      "category": "Boxes",
+      "name": "4S box cover",
+      "unit": "each",
+      "price": 0.75,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/4S-box-cover"
+    },
+    {
+      "category": "Boxes",
+      "name": "Double gang box",
+      "unit": "each",
+      "price": 4.24,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/Double-gang-box"
+    },
+    {
+      "category": "Boxes",
+      "name": "Plastic round box",
+      "unit": "each",
+      "price": 4.84,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/Plastic-round-box"
+    },
+    {
+      "category": "Boxes",
+      "name": "Single gang plastic box",
+      "unit": "each",
+      "price": 0.98,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/Single-gang-plastic-box"
+    },
+    {
+      "category": "Boxes",
+      "name": "Triple gang box",
+      "unit": "each",
+      "price": 4.96,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/Triple-gang-box"
+    },
+    {
+      "category": "Covers",
+      "name": "Blank cover",
+      "unit": "each",
+      "price": 0.5,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/Blank-cover"
+    },
+    {
+      "category": "Covers",
+      "name": "Double switch cover",
+      "unit": "each",
+      "price": 0.65,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/Double-switch-cover"
+    },
+    {
+      "category": "Covers",
+      "name": "Duplex receptacle cover",
+      "unit": "each",
+      "price": 0.5,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/Duplex-receptacle-cover"
+    },
+    {
+      "category": "Covers",
+      "name": "GFCI cover",
+      "unit": "each",
+      "price": 1.25,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/GFCI-cover"
+    },
+    {
+      "category": "Covers",
+      "name": "Single pole + duplex combo cover",
+      "unit": "each",
+      "price": 2.22,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/Single-pole-%2B-duplex-combo-cover"
+    },
+    {
+      "category": "Covers",
+      "name": "Single switch cover",
+      "unit": "each",
+      "price": 0.5,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/Single-switch-cover"
+    },
+    {
+      "category": "Covers",
+      "name": "Triple switch cover",
+      "unit": "each",
+      "price": 0.75,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/Triple-switch-cover"
     },
     {
       "category": "Lighting",
       "name": "Keyless light holder",
       "unit": "each",
       "price": 2.33,
-      "notes": ""
+      "notes": "",
+      "url": "https://www.homedepot.com/s/Keyless-light-holder"
     },
     {
       "category": "Lighting",
       "name": "Light bulb",
       "unit": "each",
       "price": 2.87,
-      "notes": ""
-    },
-    {
-      "category": "Wire",
-      "name": "1 ft hot wire",
-      "unit": "ft",
-      "price": 0.18,
-      "notes": ""
-    },
-    {
-      "category": "Wire",
-      "name": "1 ft neutral wire",
-      "unit": "ft",
-      "price": 0.17,
-      "notes": ""
-    },
-    {
-      "category": "Wire",
-      "name": "1 ft ground wire",
-      "unit": "ft",
-      "price": 0.47,
-      "notes": ""
-    },
-    {
-      "category": "Wire",
-      "name": "1 ft 14/2 Romex",
-      "unit": "ft",
-      "price": 0.32,
-      "notes": ""
-    },
-    {
-      "category": "Wire",
-      "name": "1 ft 14/3 Romex",
-      "unit": "ft",
-      "price": 0.45,
-      "notes": ""
-    },
-    {
-      "category": "Wire",
-      "name": "1 ft 12/2 Romex",
-      "unit": "ft",
-      "price": 1.24,
-      "notes": ""
-    },
-    {
-      "category": "Wire",
-      "name": "1 ft 12/3 Romex",
-      "unit": "ft",
-      "price": 0.95,
-      "notes": ""
+      "notes": "",
+      "url": "https://www.homedepot.com/s/Light-bulb"
     },
     {
       "category": "Wire",
       "name": "1 ft 10/2 Romex",
       "unit": "ft",
       "price": 1.2,
-      "notes": ""
+      "notes": "",
+      "url": "https://www.homedepot.com/s/1-ft-10%2F2-Romex"
     },
     {
       "category": "Wire",
       "name": "1 ft 10/3 Romex",
       "unit": "ft",
       "price": 1.55,
-      "notes": ""
+      "notes": "",
+      "url": "https://www.homedepot.com/s/1-ft-10%2F3-Romex"
     },
     {
       "category": "Wire",
-      "name": "1 ft 8/2 Romex",
+      "name": "1 ft 12/2 Romex",
       "unit": "ft",
-      "price": 2,
-      "notes": ""
+      "price": 1.24,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/1-ft-12%2F2-Romex"
     },
     {
       "category": "Wire",
-      "name": "1 ft 8/3 Romex",
+      "name": "1 ft 12/3 Romex",
       "unit": "ft",
-      "price": 2.6,
-      "notes": ""
+      "price": 0.95,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/1-ft-12%2F3-Romex"
+    },
+    {
+      "category": "Wire",
+      "name": "1 ft 14/2 Romex",
+      "unit": "ft",
+      "price": 0.32,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/1-ft-14%2F2-Romex"
+    },
+    {
+      "category": "Wire",
+      "name": "1 ft 14/3 Romex",
+      "unit": "ft",
+      "price": 0.45,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/1-ft-14%2F3-Romex"
     },
     {
       "category": "Wire",
       "name": "1 ft 6/3 Romex",
       "unit": "ft",
       "price": 3.25,
-      "notes": ""
+      "notes": "",
+      "url": "https://www.homedepot.com/s/1-ft-6%2F3-Romex"
+    },
+    {
+      "category": "Wire",
+      "name": "1 ft 8/2 Romex",
+      "unit": "ft",
+      "price": 2,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/1-ft-8%2F2-Romex"
+    },
+    {
+      "category": "Wire",
+      "name": "1 ft 8/3 Romex",
+      "unit": "ft",
+      "price": 2.6,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/1-ft-8%2F3-Romex"
+    },
+    {
+      "category": "Wire",
+      "name": "1 ft ground wire",
+      "unit": "ft",
+      "price": 0.47,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/1-ft-ground-wire"
+    },
+    {
+      "category": "Wire",
+      "name": "1 ft hot wire",
+      "unit": "ft",
+      "price": 0.18,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/1-ft-hot-wire"
+    },
+    {
+      "category": "Wire",
+      "name": "1 ft neutral wire",
+      "unit": "ft",
+      "price": 0.17,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/1-ft-neutral-wire"
     },
     {
       "category": "Wire",
       "name": "1 ft power cord",
       "unit": "ft",
       "price": 1.85,
-      "notes": ""
-    },
-    {
-      "category": "Conduit",
-      "name": "1 ft 1/2-inch EMT pipe",
-      "unit": "ft",
-      "price": 0.7,
-      "notes": ""
-    },
-    {
-      "category": "Conduit",
-      "name": "1 ft 3/4-inch EMT pipe",
-      "unit": "ft",
-      "price": 1,
-      "notes": ""
+      "notes": "",
+      "url": "https://www.homedepot.com/s/1-ft-power-cord"
     },
     {
       "category": "Conduit",
       "name": "1 ft 1-inch EMT pipe",
       "unit": "ft",
       "price": 1.35,
-      "notes": ""
+      "notes": "",
+      "url": "https://www.homedepot.com/s/1-ft-1-inch-EMT-pipe"
     },
     {
       "category": "Conduit",
-      "name": "1/2-inch EMT connector",
-      "unit": "each",
-      "price": 0.8,
-      "notes": ""
+      "name": "1 ft 1/2-inch EMT pipe",
+      "unit": "ft",
+      "price": 0.7,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/1-ft-1%2F2-inch-EMT-pipe"
     },
     {
       "category": "Conduit",
-      "name": "3/4-inch EMT connector",
-      "unit": "each",
+      "name": "1 ft 3/4-inch EMT pipe",
+      "unit": "ft",
       "price": 1,
-      "notes": ""
+      "notes": "",
+      "url": "https://www.homedepot.com/s/1-ft-3%2F4-inch-EMT-pipe"
+    },
+    {
+      "category": "Conduit",
+      "name": "1-inch 1-hole clip",
+      "unit": "each",
+      "price": 0.41,
+      "notes": "",
+      "url": "https://www.homedepot.com/p/316097913"
     },
     {
       "category": "Conduit",
       "name": "1-inch EMT connector",
       "unit": "each",
       "price": 1.35,
-      "notes": ""
-    },
-    {
-      "category": "Conduit",
-      "name": "1/2-inch EMT coupling",
-      "unit": "each",
-      "price": 0.5,
-      "notes": ""
-    },
-    {
-      "category": "Conduit",
-      "name": "3/4-inch EMT coupling",
-      "unit": "each",
-      "price": 0.7,
-      "notes": ""
+      "notes": "",
+      "url": "https://www.homedepot.com/s/1-inch-EMT-connector"
     },
     {
       "category": "Conduit",
       "name": "1-inch EMT coupling",
       "unit": "each",
       "price": 0.9,
-      "notes": ""
+      "notes": "",
+      "url": "https://www.homedepot.com/s/1-inch-EMT-coupling"
     },
     {
       "category": "Conduit",
-      "name": "1/2-inch half clip",
+      "name": "1-inch locknut",
       "unit": "each",
-      "price": 0.21,
-      "notes": ""
+      "price": 0.66,
+      "notes": "",
+      "url": "https://www.homedepot.com/p/202241103"
     },
     {
       "category": "Conduit",
-      "name": "3/4-inch half clip",
-      "unit": "each",
-      "price": 0.25,
-      "notes": ""
-    },
-    {
-      "category": "Conduit",
-      "name": "1-inch half clip",
+      "name": "1-inch Mini clip",
       "unit": "each",
       "price": 0.35,
-      "notes": ""
+      "notes": "",
+      "url": "https://www.homedepot.com/s/1-inch-Mini-clip"
     },
     {
       "category": "Conduit",
-      "name": "LFNC connector",
+      "name": "1/2-inch 1-hole clip",
       "unit": "each",
-      "price": 3,
-      "notes": ""
+      "price": 0.18,
+      "notes": "",
+      "url": "https://www.homedepot.com/p/316097971"
+    },
+    {
+      "category": "Conduit",
+      "name": "1/2-inch EMT connector",
+      "unit": "each",
+      "price": 0.8,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/1%2F2-inch-EMT-connector"
+    },
+    {
+      "category": "Conduit",
+      "name": "1/2-inch EMT coupling",
+      "unit": "each",
+      "price": 0.5,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/1%2F2-inch-EMT-coupling"
+    },
+    {
+      "category": "Conduit",
+      "name": "1/2-inch locknut",
+      "unit": "each",
+      "price": 0.23,
+      "notes": "",
+      "url": "https://www.homedepot.com/b/Electrical-Electrical-Boxes-Conduit-Fittings-Conduit-Fittings/1-2/Locknut/N-5yc1vZbohkZ1z10wyuZ1z113et"
+    },
+    {
+      "category": "Conduit",
+      "name": "1/2-inch Mini clip",
+      "unit": "each",
+      "price": 0.21,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/1%2F2-inch-Mini-clip"
+    },
+    {
+      "category": "Conduit",
+      "name": "3/4-inch 1-hole clip",
+      "unit": "each",
+      "price": 0.27,
+      "notes": "",
+      "url": "https://www.homedepot.com/p/316097986"
+    },
+    {
+      "category": "Conduit",
+      "name": "3/4-inch EMT connector",
+      "unit": "each",
+      "price": 1,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/3%2F4-inch-EMT-connector"
+    },
+    {
+      "category": "Conduit",
+      "name": "3/4-inch EMT coupling",
+      "unit": "each",
+      "price": 0.7,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/3%2F4-inch-EMT-coupling"
+    },
+    {
+      "category": "Conduit",
+      "name": "3/4-inch locknut",
+      "unit": "each",
+      "price": 0.46,
+      "notes": "",
+      "url": "https://www.homedepot.com/b/Electrical-Electrical-Boxes-Conduit-Fittings-Conduit-Fittings/3-4/Locknut/N-5yc1vZbohkZ1z10wyuZ1z115w7"
+    },
+    {
+      "category": "Conduit",
+      "name": "3/4-inch Mini clip",
+      "unit": "each",
+      "price": 0.25,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/3%2F4-inch-Mini-clip"
     },
     {
       "category": "Conduit",
       "name": "LFNC 90 connector",
       "unit": "each",
       "price": 6,
-      "notes": ""
+      "notes": "",
+      "url": "https://www.homedepot.com/s/LFNC-90-connector"
+    },
+    {
+      "category": "Conduit",
+      "name": "LFNC connector",
+      "unit": "each",
+      "price": 3,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/LFNC-connector"
     },
     {
       "category": "Conduit",
       "name": "Liquid-tight connector",
       "unit": "each",
       "price": 2.8,
-      "notes": ""
+      "notes": "",
+      "url": "https://www.homedepot.com/s/Liquid-tight-connector"
     },
     {
       "category": "Connectors",
       "name": "1/2-inch Romex connector",
       "unit": "each",
       "price": 0.6,
-      "notes": ""
+      "notes": "",
+      "url": "https://www.homedepot.com/s/1%2F2-inch-Romex-connector"
     },
     {
       "category": "Connectors",
       "name": "3/4-inch Romex connector",
       "unit": "each",
       "price": 0.85,
-      "notes": ""
-    },
-    {
-      "category": "Connectors",
-      "name": "Wire nut - red/yellow/orange",
-      "unit": "each",
-      "price": 0.17,
-      "notes": ""
+      "notes": "",
+      "url": "https://www.homedepot.com/s/3%2F4-inch-Romex-connector"
     },
     {
       "category": "Connectors",
       "name": "Ground wire connector",
       "unit": "each",
       "price": 0.15,
-      "notes": ""
+      "notes": "",
+      "url": "https://www.homedepot.com/s/Ground-wire-connector"
     },
     {
-      "category": "Fasteners",
-      "name": "Wood screw",
-      "unit": "each",
-      "price": 0.14,
-      "notes": ""
-    },
-    {
-      "category": "Fasteners",
-      "name": "8-32 screw",
+      "category": "Connectors",
+      "name": "Wire nut - red/yellow/orange",
       "unit": "each",
       "price": 0.17,
-      "notes": ""
-    },
-    {
-      "category": "Fasteners",
-      "name": "6-32 screw",
-      "unit": "each",
-      "price": 0.18,
-      "notes": ""
+      "notes": "",
+      "url": "https://www.homedepot.com/s/Wire-nut---red%2Fyellow%2Forange"
     },
     {
       "category": "Fasteners",
       "name": "6-32 nut",
       "unit": "each",
       "price": 6.2,
-      "notes": ""
+      "notes": "",
+      "url": "https://www.homedepot.com/s/6-32-nut"
     },
     {
       "category": "Fasteners",
-      "name": "Machine screw assorted",
+      "name": "6-32 screw",
       "unit": "each",
-      "price": 0.05,
-      "notes": ""
+      "price": 0.18,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/6-32-screw"
     },
     {
       "category": "Fasteners",
-      "name": "Sheet-metal screw",
+      "name": "8-32 screw",
       "unit": "each",
-      "price": 0.06,
-      "notes": ""
+      "price": 0.17,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/8-32-screw"
     },
     {
       "category": "Fasteners",
       "name": "Grounding screw",
       "unit": "each",
       "price": 0.1,
-      "notes": ""
+      "notes": "",
+      "url": "https://www.homedepot.com/s/Grounding-screw"
+    },
+    {
+      "category": "Fasteners",
+      "name": "Machine screw assorted",
+      "unit": "each",
+      "price": 0.05,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/Machine-screw-assorted"
     },
     {
       "category": "Fasteners",
       "name": "NM cable staple",
       "unit": "each",
       "price": 0.03,
-      "notes": ""
+      "notes": "",
+      "url": "https://www.homedepot.com/s/NM-cable-staple"
+    },
+    {
+      "category": "Fasteners",
+      "name": "Sheet-metal screw",
+      "unit": "each",
+      "price": 0.06,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/Sheet-metal-screw"
+    },
+    {
+      "category": "Fasteners",
+      "name": "Wood screw",
+      "unit": "each",
+      "price": 0.14,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/Wood-screw"
     },
     {
       "category": "Protection",
       "name": "15A breaker",
       "unit": "each",
       "price": 7.87,
-      "notes": ""
+      "notes": "",
+      "url": "https://www.homedepot.com/s/15A-breaker"
     },
     {
       "category": "Protection",
       "name": "20A breaker",
       "unit": "each",
       "price": 7.33,
-      "notes": ""
+      "notes": "",
+      "url": "https://www.homedepot.com/s/20A-breaker"
     },
     {
       "category": "Protection",
       "name": "30A breaker",
       "unit": "each",
       "price": 10,
-      "notes": ""
+      "notes": "",
+      "url": "https://www.homedepot.com/s/30A-breaker"
     },
     {
       "category": "Protection",
       "name": "40A breaker",
       "unit": "each",
       "price": 12,
-      "notes": ""
+      "notes": "",
+      "url": "https://www.homedepot.com/s/40A-breaker"
     },
     {
       "category": "Protection",
       "name": "50A breaker",
       "unit": "each",
       "price": 15,
-      "notes": ""
+      "notes": "",
+      "url": "https://www.homedepot.com/s/50A-breaker"
     },
     {
-      "category": "Misc",
+      "category": "Specialty",
       "name": "Blank Mulberry",
       "unit": "each",
       "price": 1.85,
-      "notes": ""
+      "notes": "",
+      "url": "https://www.homedepot.com/s/Blank-Mulberry"
     },
     {
-      "category": "Misc",
-      "name": "Single-pole switch Mulberry",
-      "unit": "each",
-      "price": 0.52,
-      "notes": ""
-    },
-    {
-      "category": "Misc",
-      "name": "Duplex Mulberry",
-      "unit": "each",
-      "price": 3.96,
-      "notes": ""
-    },
-    {
-      "category": "Misc",
+      "category": "Specialty",
       "name": "Double-switch Mulberry",
       "unit": "each",
       "price": 2.65,
-      "notes": ""
+      "notes": "",
+      "url": "https://www.homedepot.com/s/Double-switch-Mulberry"
     },
     {
-      "category": "Misc",
+      "category": "Specialty",
+      "name": "Duplex Mulberry",
+      "unit": "each",
+      "price": 3.96,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/Duplex-Mulberry"
+    },
+    {
+      "category": "Specialty",
+      "name": "Panel box / load center",
+      "unit": "each",
+      "price": 28.98,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/Panel-box-%2F-load-center"
+    },
+    {
+      "category": "Specialty",
       "name": "Panel cover",
       "unit": "each",
       "price": 12,
-      "notes": ""
+      "notes": "",
+      "url": "https://www.homedepot.com/s/Panel-cover"
+    },
+    {
+      "category": "Specialty",
+      "name": "Single-pole switch Mulberry",
+      "unit": "each",
+      "price": 0.52,
+      "notes": "",
+      "url": "https://www.homedepot.com/s/Single-pole-switch-Mulberry"
     }
   ],
   "tools": [
@@ -574,5 +698,6 @@
     "Ear protection",
     "Hard hat",
     "Tool bag"
-  ]
+  ],
+  "version": "1.2.0"
 }
