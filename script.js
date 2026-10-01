@@ -92,66 +92,82 @@ async function loadDatabase() {
 }
 
 /* =========================================================
-   MATERIAL OPTIONS
+   AUTOCOMPLETE OPTIONS
 ========================================================= */
 
-function materialOptions(selected = "") {
-  const groups = {};
-
-  MATERIALS.forEach(material => {
-    if (!groups[material.category]) {
-      groups[material.category] = [];
-    }
-
-    groups[material.category].push(material);
-  });
-
-  // Completely blank default option
-  let html = '<option value=""></option>';
-
-  for (const category of Object.keys(groups)) {
-    html += `
-      <optgroup label="${esc(category)}">
-    `;
-
-    groups[category].forEach(material => {
-      html += `
-        <option
-          value="${esc(material.name)}"
-          ${material.name === selected ? "selected" : ""}
-        >
-          ${esc(material.name)}
-        </option>
-      `;
-    });
-
-    html += `
-      </optgroup>
-    `;
-  }
-
-  return html;
+function materialValues() {
+  return MATERIALS.map(material => material.name);
 }
 
-/* =========================================================
-   TOOL OPTIONS
-========================================================= */
+function toolValues() {
+  return TOOLS;
+}
 
-function toolOptions(selected = "") {
-  let html = '<option value=""></option>';
+function autocompleteInput(value, values) {
+  const typed = String(value || "").trim();
+  if (!typed) return "";
 
-  TOOLS.forEach(tool => {
-    html += `
-      <option
-        value="${esc(tool)}"
-        ${tool === selected ? "selected" : ""}
-      >
-        ${esc(tool)}
-      </option>
-    `;
-  });
+  const exact = values.find(item =>
+    item.toLowerCase() === typed.toLowerCase()
+  );
 
-  return html;
+  if (exact) return exact;
+
+  const startsWith = values.find(item =>
+    item.toLowerCase().startsWith(typed.toLowerCase())
+  );
+
+  if (startsWith) return startsWith;
+
+  const contains = values.find(item =>
+    item.toLowerCase().includes(typed.toLowerCase())
+  );
+
+  return contains || typed;
+}
+
+function materialInput(selected = "", index = 0) {
+  return `
+    <input
+      type="text"
+      class="material-input"
+      data-i="${index}"
+      value="${esc(selected)}"
+      list="material-options-${index}"
+      placeholder="Type material..."
+      autocomplete="on"
+    >
+    <datalist id="material-options-${index}">
+      ${MATERIALS.map(material => `
+        <option value="${esc(material.name)}" label="${esc(material.category)}"></option>
+      `).join("")}
+    </datalist>
+  `;
+}
+
+function toolInput(selected = "", index = 0) {
+  return `
+    <input
+      type="text"
+      class="tool-input"
+      data-i="${index}"
+      value="${esc(selected)}"
+      list="tool-options-${index}"
+      placeholder="Type tool..."
+      autocomplete="on"
+    >
+    <datalist id="tool-options-${index}">
+      ${TOOLS.map(tool => `
+        <option value="${esc(tool)}"></option>
+      `).join("")}
+    </datalist>
+  `;
+}
+
+function completeInput(input, values) {
+  const completed = autocompleteInput(input.value, values);
+  input.value = completed;
+  return completed;
 }
 
 /* =========================================================
@@ -165,15 +181,11 @@ function renderRows() {
 
   body.innerHTML = state.rows.map((row, index) => {
     const material = materialByName(row.material);
-
     const price = material?.price || 0;
-
-    const total =
-      (Number(row.qty) || 0) * price;
+    const total = (Number(row.qty) || 0) * price;
 
     return `
       <tr>
-
         <td>
           <input
             type="number"
@@ -186,12 +198,7 @@ function renderRows() {
         </td>
 
         <td>
-          <select
-            data-i="${index}"
-            class="material-input"
-          >
-            ${materialOptions(row.material)}
-          </select>
+          ${materialInput(row.material, index)}
         </td>
 
         <td class="cost-each">
@@ -203,21 +210,14 @@ function renderRows() {
         </td>
 
         <td>
-          <select
-            data-i="${index}"
-            class="tool-input"
-          >
-            ${toolOptions(row.tool)}
-          </select>
+          ${toolInput(row.tool, index)}
         </td>
-
       </tr>
     `;
   }).join("");
 
   updateTotals();
 }
-
 /* =========================================================
    TOTALS
 ========================================================= */
