@@ -642,6 +642,29 @@ table tbody tr:nth-child(even){
   }
 }
 
+/* VERSION */
+.app-version{
+  display:inline-block;
+  margin-left:8px;
+  font-size:9px;
+  font-weight:700;
+  opacity:.75;
+  letter-spacing:.2px;
+}
+
+/* HOME DEPOT MATERIAL LINKS */
+.material-link{
+  color:#2563eb;
+  text-decoration:underline;
+  text-decoration-thickness:1px;
+  text-underline-offset:2px;
+  font-weight:600;
+}
+
+.material-link:hover{
+  color:#1d4ed8;
+}
+
 /* REMOVE DROPDOWN ARROWS */
 select{
   appearance:none;
