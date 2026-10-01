@@ -300,48 +300,81 @@ function setupMaterialEvents() {
   if (!body) return;
 
   body.addEventListener("input", event => {
-    const index =
-      Number(event.target.dataset.i);
+    const index = Number(event.target.dataset.i);
 
     if (Number.isNaN(index)) return;
 
-    if (
-      event.target.classList.contains(
-        "qty-input"
-      )
-    ) {
-      state.rows[index].qty =
-        event.target.value;
+    if (event.target.classList.contains("qty-input")) {
+      state.rows[index].qty = event.target.value;
+    }
+
+    if (event.target.classList.contains("material-input")) {
+      state.rows[index].material = event.target.value;
+    }
+
+    if (event.target.classList.contains("tool-input")) {
+      state.rows[index].tool = event.target.value;
     }
 
     updateTotals();
   });
 
   body.addEventListener("change", event => {
-    const index =
-      Number(event.target.dataset.i);
+    const index = Number(event.target.dataset.i);
 
     if (Number.isNaN(index)) return;
 
-    if (
-      event.target.classList.contains(
-        "material-input"
-      )
-    ) {
-      state.rows[index].material =
-        event.target.value;
+    if (event.target.classList.contains("material-input")) {
+      state.rows[index].material = completeInput(
+        event.target,
+        materialValues()
+      );
     }
 
-    if (
-      event.target.classList.contains(
-        "tool-input"
-      )
-    ) {
-      state.rows[index].tool =
-        event.target.value;
+    if (event.target.classList.contains("tool-input")) {
+      state.rows[index].tool = completeInput(
+        event.target,
+        toolValues()
+      );
     }
 
     updateTotals();
+  });
+
+  body.addEventListener("keydown", event => {
+    if (
+      !event.target.classList.contains("material-input") &&
+      !event.target.classList.contains("tool-input")
+    ) {
+      return;
+    }
+
+    if (event.key !== "Tab" && event.key !== "Enter") {
+      return;
+    }
+
+    const values = event.target.classList.contains("material-input")
+      ? materialValues()
+      : toolValues();
+
+    const completed = completeInput(event.target, values);
+    const index = Number(event.target.dataset.i);
+
+    if (!Number.isNaN(index)) {
+      if (event.target.classList.contains("material-input")) {
+        state.rows[index].material = completed;
+      } else {
+        state.rows[index].tool = completed;
+      }
+      updateTotals();
+    }
+
+    // Enter confirms the autocomplete without submitting anything.
+    if (event.key === "Enter") {
+      event.preventDefault();
+      event.target.dispatchEvent(new Event("change", { bubbles: true }));
+    }
+    // Tab is intentionally not prevented, so focus moves to the next field.
   });
 }
 
