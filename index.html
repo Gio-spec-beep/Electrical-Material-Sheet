@@ -1,63 +1,443 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
   <title>Electrical Material Sheet</title>
-  <link rel="stylesheet" href="styles.css">
+
+  <link
+    rel="stylesheet"
+    href="styles.css"
+  >
 </head>
+
 <body>
+
 <header class="topbar">
+
   <div class="brand">
-    <div class="brand-icon">⚡</div>
-    <div><h1>Electrical Estimator</h1><span>Material & Labor Management</span></div>
+
+    <div class="brand-icon">
+      ⚡
+    </div>
+
+    <div>
+      <h1>
+        Electrical Estimator
+      </h1>
+
+      <span>
+        Material & Labor Management
+      </span>
+    </div>
+
   </div>
+
+
   <nav class="nav-tabs">
-    <button class="nav-btn active" data-section="material-sheet">Material Sheet</button>
-    <button class="nav-btn" data-section="tool-list">Tool List</button>
-    <button class="nav-btn" data-section="price-list">Price List</button>
+
+    <button
+      class="nav-btn active"
+      data-section="material-sheet"
+    >
+      Material Sheet
+    </button>
+
+    <button
+      class="nav-btn"
+      data-section="tool-list"
+    >
+      Tool List
+    </button>
+
+    <button
+      class="nav-btn"
+      data-section="price-list"
+    >
+      Price List
+    </button>
+
   </nav>
+
 </header>
+
+
 <main class="container">
-<section id="material-sheet" class="page-section active">
+
+
+<!-- =====================================================
+     MATERIAL SHEET
+====================================================== -->
+
+<section
+  id="material-sheet"
+  class="page-section active"
+>
+
   <div class="sheet-actions">
-    <button id="clearBtn" class="btn secondary">Clear</button>
-    <button id="printBtn" class="btn primary">Print / 1 Page</button>
+
+    <button
+      id="clearBtn"
+      class="btn secondary"
+    >
+      Clear
+    </button>
+
+    <button
+      id="printBtn"
+      class="btn primary"
+    >
+      Print / 1 Page
+    </button>
+
   </div>
+
+
   <div class="paper-sheet">
+
     <div class="form-header">
-      <div class="header-field name-field"><label>Name</label><input id="jobName" type="text"></div>
-      <div class="header-field date-field"><label>Date</label><input id="jobDate" type="date"></div>
-      <div class="header-field project-field"><label>NM / EMT</label><select id="projectType"><option value=""></option><option value="NM">NM</option><option value="EMT">EMT</option></select></div>
-    </div>
-    <table id="materialTable" class="material-table">
-      <thead><tr><th class="qty">Qty</th><th class="name">Name</th><th class="each">Cost Each</th><th class="total">Cost Total</th><th class="tools">Tool List</th></tr></thead>
-      <tbody id="materialBody"></tbody>
-    </table>
-    <div class="totals-area">
-      <div class="totals-spacer"></div>
-      <div class="totals-box">
-        <div><span>Material total</span><strong id="materialTotal">$0.00</strong></div>
-        <div><span>Sales tax (6.25%)</span><strong id="taxTotal">$0.00</strong></div>
-        <div><span>Material total + tax</span><strong id="materialsWithTax">$0.00</strong></div>
-        <div class="labor-row"><span>Labor</span><label>Hours <input id="laborHours" type="number" min="0" step="0.25" value="0"></label><label>@ <input id="laborRate" type="number" min="0" step="1" value="75"></label><strong id="laborTotal">$0.00</strong></div>
-        <div class="grand"><span>Grand Total</span><strong id="grandTotal">$0.00</strong></div>
+
+      <div class="header-field name-field">
+
+        <label>
+          Name
+        </label>
+
+        <input
+          id="jobName"
+          type="text"
+        >
+
       </div>
+
+
+      <div class="header-field date-field">
+
+        <label>
+          Date
+        </label>
+
+        <input
+          id="jobDate"
+          type="date"
+        >
+
+      </div>
+
+
+      <div class="header-field project-field">
+
+        <label>
+          NM / EMT
+        </label>
+
+        <select id="projectType">
+
+          <option value=""></option>
+
+          <option value="NM">
+            NM
+          </option>
+
+          <option value="EMT">
+            EMT
+          </option>
+
+        </select>
+
+      </div>
+
     </div>
+
+
+    <table
+      id="materialTable"
+      class="material-table"
+    >
+
+      <thead>
+
+        <tr>
+
+          <th class="qty">
+            Qty
+          </th>
+
+          <th class="name">
+            Name
+          </th>
+
+          <th class="each">
+            Cost Each
+          </th>
+
+          <th class="total">
+            Cost Total
+          </th>
+
+          <th class="tools">
+            Tool List
+          </th>
+
+        </tr>
+
+      </thead>
+
+
+      <tbody id="materialBody"></tbody>
+
+    </table>
+
+
+    <div class="totals-area">
+
+      <div class="totals-spacer"></div>
+
+
+      <div class="totals-box">
+
+        <div>
+
+          <span>
+            Material total
+          </span>
+
+          <strong id="materialTotal">
+            $0.00
+          </strong>
+
+        </div>
+
+
+        <div>
+
+          <span>
+            Sales tax (6.25%)
+          </span>
+
+          <strong id="taxTotal">
+            $0.00
+          </strong>
+
+        </div>
+
+
+        <div>
+
+          <span>
+            Material total + tax
+          </span>
+
+          <strong id="materialsWithTax">
+            $0.00
+          </strong>
+
+        </div>
+
+
+        <div class="labor-row">
+
+          <span>
+            Labor
+          </span>
+
+
+          <label>
+
+            Hours
+
+            <input
+              id="laborHours"
+              type="number"
+              min="0"
+              step="0.25"
+              value="0"
+            >
+
+          </label>
+
+
+          <label>
+
+            @
+
+            <input
+              id="laborRate"
+              type="number"
+              min="0"
+              step="1"
+              value="75"
+            >
+
+          </label>
+
+
+          <strong id="laborTotal">
+            $0.00
+          </strong>
+
+        </div>
+
+
+        <div class="grand">
+
+          <span>
+            Grand Total
+          </span>
+
+          <strong id="grandTotal">
+            $0.00
+          </strong>
+
+        </div>
+
+      </div>
+
+    </div>
+
   </div>
+
 </section>
-<section id="tool-list" class="page-section">
-  <div class="page-heading"><div><p class="eyebrow">PROJECT EQUIPMENT</p><h2>Tool List</h2><p class="muted">Tools available for the project.</p></div></div>
-  <div class="card"><div class="tool-list-grid" id="toolListGrid"></div></div>
+
+
+<!-- =====================================================
+     TOOL LIST
+====================================================== -->
+
+<section
+  id="tool-list"
+  class="page-section"
+>
+
+  <div class="page-heading">
+
+    <div>
+
+      <p class="eyebrow">
+        PROJECT EQUIPMENT
+      </p>
+
+      <h2>
+        Tool List
+      </h2>
+
+      <p class="muted">
+        Tools available for the project.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <div class="card">
+
+    <div
+      class="tool-list-grid"
+      id="toolListGrid"
+    ></div>
+
+  </div>
+
 </section>
-<section id="price-list" class="page-section">
-  <div class="page-heading"><div><p class="eyebrow">MATERIAL DATABASE</p><h2>Price List</h2><p class="muted">Material prices used by the estimator.</p></div></div>
+
+
+<!-- =====================================================
+     PRICE LIST
+====================================================== -->
+
+<section
+  id="price-list"
+  class="page-section"
+>
+
+  <div class="page-heading">
+
+    <div>
+
+      <p class="eyebrow">
+        MATERIAL DATABASE
+      </p>
+
+      <h2>
+        Price List
+      </h2>
+
+      <p class="muted">
+        Material prices used by the estimator.
+      </p>
+
+    </div>
+
+  </div>
+
+
   <div class="card table-card">
-    <div class="price-search"><input id="priceSearch" type="search" placeholder="Search materials..."></div>
-    <div class="table-wrap"><table><thead><tr><th>Category</th><th>Material</th><th>Unit</th><th>Price</th><th>Notes</th></tr></thead><tbody id="priceBody"></tbody></table></div>
+
+    <div class="price-search">
+
+      <input
+        id="priceSearch"
+        type="search"
+        placeholder="Search materials..."
+      >
+
+    </div>
+
+
+    <div class="table-wrap">
+
+      <table>
+
+        <thead>
+
+          <tr>
+
+            <th>
+              Category
+            </th>
+
+            <th>
+              Material
+            </th>
+
+            <th>
+              Unit
+            </th>
+
+            <th>
+              Price
+            </th>
+
+            <th>
+              Notes
+            </th>
+
+          </tr>
+
+        </thead>
+
+
+        <tbody id="priceBody"></tbody>
+
+      </table>
+
+    </div>
+
   </div>
+
 </section>
+
 </main>
+
+
 <script src="script.js"></script>
+
 </body>
 </html>
