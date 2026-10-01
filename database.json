@@ -1,0 +1,578 @@
+{
+  "materials": [
+    {
+      "category": "Boxes",
+      "name": "4-inch Square EMT box",
+      "unit": "each",
+      "price": 2.48,
+      "notes": ""
+    },
+    {
+      "category": "Boxes",
+      "name": "4-inch Octagon EMT box",
+      "unit": "each",
+      "price": 2.62,
+      "notes": ""
+    },
+    {
+      "category": "Boxes",
+      "name": "Single gang plastic box",
+      "unit": "each",
+      "price": 0.98,
+      "notes": ""
+    },
+    {
+      "category": "Boxes",
+      "name": "Double gang box",
+      "unit": "each",
+      "price": 4.24,
+      "notes": ""
+    },
+    {
+      "category": "Boxes",
+      "name": "Triple gang box",
+      "unit": "each",
+      "price": 4.96,
+      "notes": ""
+    },
+    {
+      "category": "Boxes",
+      "name": "Plastic round box",
+      "unit": "each",
+      "price": 4.84,
+      "notes": ""
+    },
+    {
+      "category": "Boxes",
+      "name": "4S box cover",
+      "unit": "each",
+      "price": 0.75,
+      "notes": ""
+    },
+    {
+      "category": "Boxes",
+      "name": "4-inch square blank cover",
+      "unit": "each",
+      "price": 0.75,
+      "notes": ""
+    },
+    {
+      "category": "Boxes",
+      "name": "Panel box / load center",
+      "unit": "each",
+      "price": 28.98,
+      "notes": ""
+    },
+    {
+      "category": "Covers",
+      "name": "Single switch cover",
+      "unit": "each",
+      "price": 0.5,
+      "notes": ""
+    },
+    {
+      "category": "Covers",
+      "name": "Duplex receptacle cover",
+      "unit": "each",
+      "price": 0.5,
+      "notes": ""
+    },
+    {
+      "category": "Covers",
+      "name": "Single pole + duplex combo cover",
+      "unit": "each",
+      "price": 2.22,
+      "notes": ""
+    },
+    {
+      "category": "Covers",
+      "name": "Double switch cover",
+      "unit": "each",
+      "price": 0.65,
+      "notes": ""
+    },
+    {
+      "category": "Covers",
+      "name": "Triple switch cover",
+      "unit": "each",
+      "price": 0.75,
+      "notes": ""
+    },
+    {
+      "category": "Covers",
+      "name": "GFCI cover",
+      "unit": "each",
+      "price": 1.25,
+      "notes": ""
+    },
+    {
+      "category": "Covers",
+      "name": "Blank cover",
+      "unit": "each",
+      "price": 0.5,
+      "notes": ""
+    },
+    {
+      "category": "Switches",
+      "name": "Single-pole switch",
+      "unit": "each",
+      "price": 0.75,
+      "notes": ""
+    },
+    {
+      "category": "Switches",
+      "name": "3-way switch",
+      "unit": "each",
+      "price": 1.7,
+      "notes": ""
+    },
+    {
+      "category": "Switches",
+      "name": "4-way switch",
+      "unit": "each",
+      "price": 12.61,
+      "notes": ""
+    },
+    {
+      "category": "Switches",
+      "name": "Double-pole switch",
+      "unit": "each",
+      "price": 2.5,
+      "notes": ""
+    },
+    {
+      "category": "Switches",
+      "name": "Dimmer switch",
+      "unit": "each",
+      "price": 8,
+      "notes": ""
+    },
+    {
+      "category": "Receptacles",
+      "name": "Duplex receptacle",
+      "unit": "each",
+      "price": 0.56,
+      "notes": ""
+    },
+    {
+      "category": "Receptacles",
+      "name": "GFCI receptacle",
+      "unit": "each",
+      "price": 14,
+      "notes": ""
+    },
+    {
+      "category": "Receptacles",
+      "name": "20A duplex receptacle",
+      "unit": "each",
+      "price": 2,
+      "notes": ""
+    },
+    {
+      "category": "Lighting",
+      "name": "Keyless light holder",
+      "unit": "each",
+      "price": 2.33,
+      "notes": ""
+    },
+    {
+      "category": "Lighting",
+      "name": "Light bulb",
+      "unit": "each",
+      "price": 2.87,
+      "notes": ""
+    },
+    {
+      "category": "Wire",
+      "name": "1 ft hot wire",
+      "unit": "ft",
+      "price": 0.18,
+      "notes": ""
+    },
+    {
+      "category": "Wire",
+      "name": "1 ft neutral wire",
+      "unit": "ft",
+      "price": 0.17,
+      "notes": ""
+    },
+    {
+      "category": "Wire",
+      "name": "1 ft ground wire",
+      "unit": "ft",
+      "price": 0.47,
+      "notes": ""
+    },
+    {
+      "category": "Wire",
+      "name": "1 ft 14/2 Romex",
+      "unit": "ft",
+      "price": 0.32,
+      "notes": ""
+    },
+    {
+      "category": "Wire",
+      "name": "1 ft 14/3 Romex",
+      "unit": "ft",
+      "price": 0.45,
+      "notes": ""
+    },
+    {
+      "category": "Wire",
+      "name": "1 ft 12/2 Romex",
+      "unit": "ft",
+      "price": 1.24,
+      "notes": ""
+    },
+    {
+      "category": "Wire",
+      "name": "1 ft 12/3 Romex",
+      "unit": "ft",
+      "price": 0.95,
+      "notes": ""
+    },
+    {
+      "category": "Wire",
+      "name": "1 ft 10/2 Romex",
+      "unit": "ft",
+      "price": 1.2,
+      "notes": ""
+    },
+    {
+      "category": "Wire",
+      "name": "1 ft 10/3 Romex",
+      "unit": "ft",
+      "price": 1.55,
+      "notes": ""
+    },
+    {
+      "category": "Wire",
+      "name": "1 ft 8/2 Romex",
+      "unit": "ft",
+      "price": 2,
+      "notes": ""
+    },
+    {
+      "category": "Wire",
+      "name": "1 ft 8/3 Romex",
+      "unit": "ft",
+      "price": 2.6,
+      "notes": ""
+    },
+    {
+      "category": "Wire",
+      "name": "1 ft 6/3 Romex",
+      "unit": "ft",
+      "price": 3.25,
+      "notes": ""
+    },
+    {
+      "category": "Wire",
+      "name": "1 ft power cord",
+      "unit": "ft",
+      "price": 1.85,
+      "notes": ""
+    },
+    {
+      "category": "Conduit",
+      "name": "1 ft 1/2-inch EMT pipe",
+      "unit": "ft",
+      "price": 0.7,
+      "notes": ""
+    },
+    {
+      "category": "Conduit",
+      "name": "1 ft 3/4-inch EMT pipe",
+      "unit": "ft",
+      "price": 1,
+      "notes": ""
+    },
+    {
+      "category": "Conduit",
+      "name": "1 ft 1-inch EMT pipe",
+      "unit": "ft",
+      "price": 1.35,
+      "notes": ""
+    },
+    {
+      "category": "Conduit",
+      "name": "1/2-inch EMT connector",
+      "unit": "each",
+      "price": 0.8,
+      "notes": ""
+    },
+    {
+      "category": "Conduit",
+      "name": "3/4-inch EMT connector",
+      "unit": "each",
+      "price": 1,
+      "notes": ""
+    },
+    {
+      "category": "Conduit",
+      "name": "1-inch EMT connector",
+      "unit": "each",
+      "price": 1.35,
+      "notes": ""
+    },
+    {
+      "category": "Conduit",
+      "name": "1/2-inch EMT coupling",
+      "unit": "each",
+      "price": 0.5,
+      "notes": ""
+    },
+    {
+      "category": "Conduit",
+      "name": "3/4-inch EMT coupling",
+      "unit": "each",
+      "price": 0.7,
+      "notes": ""
+    },
+    {
+      "category": "Conduit",
+      "name": "1-inch EMT coupling",
+      "unit": "each",
+      "price": 0.9,
+      "notes": ""
+    },
+    {
+      "category": "Conduit",
+      "name": "1/2-inch half clip",
+      "unit": "each",
+      "price": 0.21,
+      "notes": ""
+    },
+    {
+      "category": "Conduit",
+      "name": "3/4-inch half clip",
+      "unit": "each",
+      "price": 0.25,
+      "notes": ""
+    },
+    {
+      "category": "Conduit",
+      "name": "1-inch half clip",
+      "unit": "each",
+      "price": 0.35,
+      "notes": ""
+    },
+    {
+      "category": "Conduit",
+      "name": "LFNC connector",
+      "unit": "each",
+      "price": 3,
+      "notes": ""
+    },
+    {
+      "category": "Conduit",
+      "name": "LFNC 90 connector",
+      "unit": "each",
+      "price": 6,
+      "notes": ""
+    },
+    {
+      "category": "Conduit",
+      "name": "Liquid-tight connector",
+      "unit": "each",
+      "price": 2.8,
+      "notes": ""
+    },
+    {
+      "category": "Connectors",
+      "name": "1/2-inch Romex connector",
+      "unit": "each",
+      "price": 0.6,
+      "notes": ""
+    },
+    {
+      "category": "Connectors",
+      "name": "3/4-inch Romex connector",
+      "unit": "each",
+      "price": 0.85,
+      "notes": ""
+    },
+    {
+      "category": "Connectors",
+      "name": "Wire nut - red/yellow/orange",
+      "unit": "each",
+      "price": 0.17,
+      "notes": ""
+    },
+    {
+      "category": "Connectors",
+      "name": "Ground wire connector",
+      "unit": "each",
+      "price": 0.15,
+      "notes": ""
+    },
+    {
+      "category": "Fasteners",
+      "name": "Wood screw",
+      "unit": "each",
+      "price": 0.14,
+      "notes": ""
+    },
+    {
+      "category": "Fasteners",
+      "name": "8-32 screw",
+      "unit": "each",
+      "price": 0.17,
+      "notes": ""
+    },
+    {
+      "category": "Fasteners",
+      "name": "6-32 screw",
+      "unit": "each",
+      "price": 0.18,
+      "notes": ""
+    },
+    {
+      "category": "Fasteners",
+      "name": "6-32 nut",
+      "unit": "each",
+      "price": 6.2,
+      "notes": ""
+    },
+    {
+      "category": "Fasteners",
+      "name": "Machine screw assorted",
+      "unit": "each",
+      "price": 0.05,
+      "notes": ""
+    },
+    {
+      "category": "Fasteners",
+      "name": "Sheet-metal screw",
+      "unit": "each",
+      "price": 0.06,
+      "notes": ""
+    },
+    {
+      "category": "Fasteners",
+      "name": "Grounding screw",
+      "unit": "each",
+      "price": 0.1,
+      "notes": ""
+    },
+    {
+      "category": "Fasteners",
+      "name": "NM cable staple",
+      "unit": "each",
+      "price": 0.03,
+      "notes": ""
+    },
+    {
+      "category": "Protection",
+      "name": "15A breaker",
+      "unit": "each",
+      "price": 7.87,
+      "notes": ""
+    },
+    {
+      "category": "Protection",
+      "name": "20A breaker",
+      "unit": "each",
+      "price": 7.33,
+      "notes": ""
+    },
+    {
+      "category": "Protection",
+      "name": "30A breaker",
+      "unit": "each",
+      "price": 10,
+      "notes": ""
+    },
+    {
+      "category": "Protection",
+      "name": "40A breaker",
+      "unit": "each",
+      "price": 12,
+      "notes": ""
+    },
+    {
+      "category": "Protection",
+      "name": "50A breaker",
+      "unit": "each",
+      "price": 15,
+      "notes": ""
+    },
+    {
+      "category": "Misc",
+      "name": "Blank Mulberry",
+      "unit": "each",
+      "price": 1.85,
+      "notes": ""
+    },
+    {
+      "category": "Misc",
+      "name": "Single-pole switch Mulberry",
+      "unit": "each",
+      "price": 0.52,
+      "notes": ""
+    },
+    {
+      "category": "Misc",
+      "name": "Duplex Mulberry",
+      "unit": "each",
+      "price": 3.96,
+      "notes": ""
+    },
+    {
+      "category": "Misc",
+      "name": "Double-switch Mulberry",
+      "unit": "each",
+      "price": 2.65,
+      "notes": ""
+    },
+    {
+      "category": "Misc",
+      "name": "Panel cover",
+      "unit": "each",
+      "price": 12,
+      "notes": ""
+    }
+  ],
+  "tools": [
+    "Tape measure",
+    "Level",
+    "Fish tape",
+    "Wire stripper",
+    "Lineman pliers",
+    "Needle-nose pliers",
+    "Diagonal cutters",
+    "Channel locks",
+    "Adjustable wrench",
+    "Conduit reamer",
+    "EMT bender 1/2-inch",
+    "EMT bender 3/4-inch",
+    "EMT bender 1-inch",
+    "Screwdriver set",
+    "Nut driver set",
+    "Impact driver",
+    "Drill",
+    "Drill bits",
+    "Hole saw kit",
+    "Voltage tester",
+    "Non-contact voltage tester",
+    "Multimeter",
+    "Circuit tracer",
+    "Wire pulling lubricant",
+    "Fish tape / pull string",
+    "Hammer",
+    "Utility knife",
+    "Pencil / marker",
+    "Level",
+    "Stud finder",
+    "Flashlight",
+    "Ladder",
+    "Extension cord",
+    "GFCI tester",
+    "Lockout/tagout kit",
+    "Safety glasses",
+    "Work gloves",
+    "Ear protection",
+    "Hard hat",
+    "Tool bag"
+  ]
+}
