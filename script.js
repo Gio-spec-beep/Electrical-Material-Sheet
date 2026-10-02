@@ -134,7 +134,7 @@ function materialInput(selected = "", index = 0) {
       data-i="${index}"
       value="${esc(selected)}"
       list="material-options-${index}"
-      placeholder="Type material..."
+      placeholder=""
       autocomplete="on"
     >
     <datalist id="material-options-${index}">
@@ -153,7 +153,7 @@ function toolInput(selected = "", index = 0) {
       data-i="${index}"
       value="${esc(selected)}"
       list="tool-options-${index}"
-      placeholder="Type tool..."
+      placeholder=""
       autocomplete="on"
     >
     <datalist id="tool-options-${index}">
