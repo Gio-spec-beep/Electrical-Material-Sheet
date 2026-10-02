@@ -55,6 +55,12 @@
     >
       Price List
     </button>
+    <button
+      class="nav-btn"
+      data-section="calculations"
+    >
+      Calculations
+    </button>
 
   </nav>
 
@@ -383,6 +389,67 @@
 
   </div>
 
+</section>
+
+<!-- CALCULATIONS -->
+<section id="calculations" class="page-section">
+  <div class="page-heading"><div>
+    <p class="eyebrow">ELECTRICAL SCHOOL</p><h2>Calculations</h2>
+    <p class="muted">Practice common electrical calculations with formulas and step-by-step results.</p>
+  </div></div>
+  <div class="calculator-grid">
+    <div class="calculator-card"><h3>⚡ Ohm's Law</h3><p class="calc-help">Enter any two values to solve V, I, R, and W.</p>
+      <div class="calc-fields">
+        <label>Voltage (V)<input id="ohmV" type="number" step="any" placeholder="V"></label><label>Current (A)<input id="ohmI" type="number" step="any" placeholder="A"></label>
+        <label>Resistance (Ω)<input id="ohmR" type="number" step="any" placeholder="Ω"></label><label>Power (W)<input id="ohmP" type="number" step="any" placeholder="W"></label>
+      </div><button class="calc-btn" type="button" data-calc="ohm">Calculate</button><div class="calc-result" id="ohmResult" aria-live="polite">Enter any two values.</div>
+    </div>
+    <div class="calculator-card"><h3>🔌 Power Calculator</h3><p class="calc-help">Calculate watts, volts, or amps using P = V × I.</p>
+      <div class="calc-fields"><label>Volts<input id="powerV" type="number" step="any" placeholder="V"></label><label>Amps<input id="powerI" type="number" step="any" placeholder="A"></label><label>Watts<input id="powerP" type="number" step="any" placeholder="W"></label></div>
+      <button class="calc-btn" type="button" data-calc="power">Calculate</button><div class="calc-result" id="powerResult" aria-live="polite">Enter two values.</div>
+    </div>
+    <div class="calculator-card"><h3>📐 Voltage Drop</h3><p class="calc-help">Approximation: Vdrop = 2 × K × I × D / CM.</p>
+      <div class="calc-fields"><label>Current (A)<input id="vdI" type="number" min="0" step="any"></label><label>One-way length (ft)<input id="vdD" type="number" min="0" step="any"></label>
+      <label>Wire size<select id="vdAWG"></select></label><label>Supply voltage<input id="vdV" type="number" min="0" step="any" value="120"></label><label>Material<select id="vdMaterial"><option value="cu">Copper</option><option value="al">Aluminum</option></select></label></div>
+      <button class="calc-btn" type="button" data-calc="voltageDrop">Calculate</button><div class="calc-result" id="vdResult" aria-live="polite">Educational approximation.</div>
+    </div>
+    <div class="calculator-card"><h3>🧵 Wire Ampacity</h3><p class="calc-help">Common conductor reference values by material and temperature.</p>
+      <div class="calc-fields"><label>Wire size<select id="ampAWG"></select></label><label>Conductor<select id="ampMaterial"><option value="cu">Copper</option><option value="al">Aluminum</option></select></label><label>Temperature<select id="ampTemp"><option value="60">60°C</option><option value="75" selected>75°C</option><option value="90">90°C</option></select></label></div>
+      <button class="calc-btn" type="button" data-calc="ampacity">Calculate</button><div class="calc-result" id="ampResult" aria-live="polite">Select a wire size.</div>
+    </div>
+    <div class="calculator-card"><h3>🛠️ Conduit Fill</h3><p class="calc-help">Approximate 40% fill calculation for three or more conductors.</p>
+      <div class="calc-fields"><label>Conduit size<select id="cfConduit"></select></label><label>Type<select id="cfType"><option value="emt">EMT</option><option value="pvc40">PVC Sch 40</option><option value="pvc80">PVC Sch 80</option></select></label><label>Number of wires<input id="cfCount" type="number" min="1" step="1" value="3"></label><label>Wire size<select id="cfAWG"></select></label></div>
+      <button class="calc-btn" type="button" data-calc="conduitFill">Calculate</button><div class="calc-result" id="cfResult" aria-live="polite">Choose conduit and wire size.</div>
+    </div>
+    <div class="calculator-card"><h3>📦 Box Fill</h3><p class="calc-help">Simplified school exercise using conductor volume allowances.</p>
+      <div class="calc-fields"><label>Box volume (cu in)<input id="bfVolume" type="number" min="0" step="any" placeholder="18"></label><label>Insulated conductors<input id="bfConductors" type="number" min="0" step="1" value="4"></label><label>Ground conductors<input id="bfGrounds" type="number" min="0" step="1" value="1"></label><label>Devices (yokes)<input id="bfDevices" type="number" min="0" step="1" value="1"></label><label>Largest wire<select id="bfAWG"></select></label></div>
+      <button class="calc-btn" type="button" data-calc="boxFill">Calculate</button><div class="calc-result" id="bfResult" aria-live="polite">Enter box volume and counts.</div>
+    </div>
+    <div class="calculator-card"><h3>🔄 Series Circuit</h3><p class="calc-help">Total resistance, current, and voltage drops.</p>
+      <div class="calc-fields"><label>Source voltage<input id="seriesV" type="number" min="0" step="any" placeholder="120"></label><label>R1 (Ω)<input id="seriesR1" type="number" min="0" step="any" placeholder="10"></label><label>R2 (Ω)<input id="seriesR2" type="number" min="0" step="any" placeholder="20"></label><label>R3 (Ω)<input id="seriesR3" type="number" min="0" step="any" placeholder="30"></label></div>
+      <button class="calc-btn" type="button" data-calc="series">Calculate</button><div class="calc-result" id="seriesResult" aria-live="polite">Enter values.</div>
+    </div>
+    <div class="calculator-card"><h3>🔀 Parallel Circuit</h3><p class="calc-help">Equivalent resistance, total current, and branch currents.</p>
+      <div class="calc-fields"><label>Source voltage<input id="parallelV" type="number" min="0" step="any" placeholder="120"></label><label>R1 (Ω)<input id="parallelR1" type="number" min="0" step="any" placeholder="20"></label><label>R2 (Ω)<input id="parallelR2" type="number" min="0" step="any" placeholder="30"></label><label>R3 (Ω)<input id="parallelR3" type="number" min="0" step="any" placeholder="60"></label></div>
+      <button class="calc-btn" type="button" data-calc="parallel">Calculate</button><div class="calc-result" id="parallelResult" aria-live="polite">Enter values.</div>
+    </div>
+    <div class="calculator-card"><h3>⚙️ Motor Calculations</h3><p class="calc-help">Basic single-phase practice: I = P / (V × PF × efficiency).</p>
+      <div class="calc-fields"><label>Horsepower<input id="motorHP" type="number" min="0" step="any" placeholder="1"></label><label>Voltage<input id="motorV" type="number" min="0" step="any" placeholder="120"></label><label>Power factor<input id="motorPF" type="number" min=".01" max="1" step="any" value=".8"></label><label>Efficiency<input id="motorEff" type="number" min=".01" max="1" step="any" value=".85"></label></div>
+      <button class="calc-btn" type="button" data-calc="motor">Calculate</button><div class="calc-result" id="motorResult" aria-live="polite">Enter horsepower and voltage.</div>
+    </div>
+    <div class="calculator-card"><h3>🔥 Electrical Load Calculation</h3><p class="calc-help">Simple load summary for school practice: watts ÷ volts = amps.</p>
+      <div class="calc-fields"><label>Lighting (W)<input id="loadLighting" type="number" min="0" step="any" value="0"></label><label>Receptacles (W)<input id="loadReceptacles" type="number" min="0" step="any" value="0"></label><label>Other loads (W)<input id="loadOther" type="number" min="0" step="any" value="0"></label><label>Voltage<input id="loadV" type="number" min="0" step="any" value="120"></label></div>
+      <button class="calc-btn" type="button" data-calc="load">Calculate</button><div class="calc-result" id="loadResult" aria-live="polite">Add loads to see total.</div>
+    </div>
+    <div class="calculator-card"><h3>🧮 Unit Conversions</h3><p class="calc-help">Inches/mm, feet/meters, and AWG diameter.</p>
+      <div class="calc-fields"><label>Conversion<select id="unitType"><option value="inmm">Inches → mm</option><option value="mmin">mm → inches</option><option value="ftm">Feet → meters</option><option value="mft">Meters → feet</option><option value="awgmm">Selected AWG → diameter (mm)</option><option value="mmawg">Diameter (mm) → nearest AWG</option></select></label><label>Value<input id="unitValue" type="number" step="any" placeholder="Value"></label><label>Selected AWG<select id="unitAWG"></select></label></div>
+      <button class="calc-btn" type="button" data-calc="units">Convert</button><div class="calc-result" id="unitResult" aria-live="polite">Enter a value.</div>
+    </div>
+    <div class="calculator-card"><h3>🔢 Fraction Calculator</h3><p class="calc-help">Add, subtract, multiply, or divide fractions and mixed numbers.</p>
+      <div class="calc-fields"><label>Fraction 1<input id="frac1" type="text" placeholder="1 1/2"></label><label>Operation<select id="fracOp"><option value="+">+</option><option value="-">−</option><option value="*">×</option><option value="/">÷</option></select></label><label>Fraction 2<input id="frac2" type="text" placeholder="3/4"></label></div>
+      <button class="calc-btn" type="button" data-calc="fraction">Calculate</button><div class="calc-result" id="fracResult" aria-live="polite">Example: 1 1/2 + 3/4.</div>
+    </div>
+  </div>
 </section>
 
 </main>
