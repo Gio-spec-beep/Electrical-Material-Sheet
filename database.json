@@ -4,657 +4,739 @@
       "category": "Devices",
       "name": "20A duplex receptacle",
       "unit": "each",
-      "price": 2,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/20A-duplex-receptacle"
+      "price": 4.38,
+      "notes": "Leviton CBR20 commercial 20A, 1-pack",
+      "url": "https://www.homedepot.com/s/20A-duplex-receptacle",
+      "verified": true
     },
     {
       "category": "Devices",
       "name": "Duplex receptacle",
       "unit": "each",
-      "price": 0.56,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/Duplex-receptacle"
+      "price": 0.98,
+      "notes": "Leviton 5320-W 15A, 1-pack",
+      "url": "https://www.homedepot.com/s/Duplex-receptacle",
+      "verified": true
     },
     {
       "category": "Devices",
       "name": "GFCI receptacle",
       "unit": "each",
-      "price": 14,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/GFCI-receptacle"
+      "price": 18.98,
+      "notes": "Leviton GFNT1-KW 15A self-test",
+      "url": "https://www.homedepot.com/s/GFCI-receptacle",
+      "verified": true
     },
     {
       "category": "Switches",
       "name": "3-way switch",
       "unit": "each",
-      "price": 1.7,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/3-way-switch"
+      "price": 5,
+      "notes": "GE 15A 3-way toggle",
+      "url": "https://www.homedepot.com/s/3-way-switch",
+      "verified": true
     },
     {
       "category": "Switches",
       "name": "4-way switch",
       "unit": "each",
       "price": 12.61,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/4-way-switch"
+      "notes": "Leviton 54504-2WS 15A 4-way toggle",
+      "url": "https://www.homedepot.com/s/4-way-switch",
+      "verified": true
     },
     {
       "category": "Switches",
       "name": "Dimmer switch",
       "unit": "each",
-      "price": 8,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/Dimmer-switch"
+      "price": 19.88,
+      "notes": "Leviton SureSlide 6672-1LW",
+      "url": "https://www.homedepot.com/s/Dimmer-switch",
+      "verified": true
     },
     {
       "category": "Switches",
       "name": "Double-pole switch",
       "unit": "each",
       "price": 2.5,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/Double-pole-switch"
+      "notes": "Estimate - not verified at Home Depot",
+      "url": "https://www.homedepot.com/s/Double-pole-switch",
+      "verified": false
     },
     {
       "category": "Switches",
       "name": "Single-pole switch",
       "unit": "each",
-      "price": 0.75,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/Single-pole-switch"
+      "price": 0.92,
+      "notes": "Leviton 1451-2W 15A toggle",
+      "url": "https://www.homedepot.com/s/Single-pole-switch",
+      "verified": true
     },
     {
       "category": "Boxes",
       "name": "4-inch Octagon EMT box",
       "unit": "each",
-      "price": 2.62,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/4-inch-Octagon-EMT-box"
+      "price": 2.88,
+      "notes": "Steel City 5415112-30R",
+      "url": "https://www.homedepot.com/s/4-inch-Octagon-EMT-box",
+      "verified": true
     },
     {
       "category": "Boxes",
       "name": "4-inch square blank cover",
       "unit": "each",
-      "price": 0.75,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/4-inch-square-blank-cover"
+      "price": 1.27,
+      "notes": "Steel City 52C1-50R",
+      "url": "https://www.homedepot.com/s/4-inch-square-blank-cover",
+      "verified": true
     },
     {
       "category": "Boxes",
       "name": "4-inch Square EMT box",
       "unit": "each",
-      "price": 2.48,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/4-inch-Square-EMT-box"
+      "price": 2.67,
+      "notes": "Steel City 521511234EW-50R",
+      "url": "https://www.homedepot.com/s/4-inch-Square-EMT-box",
+      "verified": true
     },
     {
       "category": "Boxes",
       "name": "4S box cover",
       "unit": "each",
-      "price": 0.75,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/4S-box-cover"
+      "price": 1.98,
+      "notes": "Steel City 52C1458-25R 5/8 in. raised ring",
+      "url": "https://www.homedepot.com/s/4S-box-cover",
+      "verified": true
     },
     {
       "category": "Boxes",
       "name": "Double gang box",
       "unit": "each",
-      "price": 4.24,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/Double-gang-box"
+      "price": 4.53,
+      "notes": "Carlon B249B 2-gang 47 cu. in.",
+      "url": "https://www.homedepot.com/s/Double-gang-box",
+      "verified": true
     },
     {
       "category": "Boxes",
       "name": "Plastic round box",
       "unit": "each",
-      "price": 4.84,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/Plastic-round-box"
+      "price": 3.91,
+      "notes": "Carlon B618RR 18 cu. in. old work",
+      "url": "https://www.homedepot.com/s/Plastic-round-box",
+      "verified": true
     },
     {
       "category": "Boxes",
       "name": "Single gang plastic box",
       "unit": "each",
-      "price": 0.98,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/Single-gang-plastic-box"
+      "price": 2.37,
+      "notes": "Carlon B114RB 14 cu. in. old work",
+      "url": "https://www.homedepot.com/s/Single-gang-plastic-box",
+      "verified": true
     },
     {
       "category": "Boxes",
       "name": "Triple gang box",
       "unit": "each",
-      "price": 4.96,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/Triple-gang-box"
+      "price": 7.27,
+      "notes": "Carlon BH353AR 3-gang new work",
+      "url": "https://www.homedepot.com/s/Triple-gang-box",
+      "verified": true
     },
     {
       "category": "Covers",
       "name": "Blank cover",
       "unit": "each",
-      "price": 0.5,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/Blank-cover"
+      "price": 0.6,
+      "notes": "Leviton PJ13-WM, 10-pack unit price",
+      "url": "https://www.homedepot.com/s/Blank-cover",
+      "verified": true
     },
     {
       "category": "Covers",
       "name": "Double switch cover",
       "unit": "each",
       "price": 0.65,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/Double-switch-cover"
+      "notes": "Estimate - not verified at Home Depot",
+      "url": "https://www.homedepot.com/s/Double-switch-cover",
+      "verified": false
     },
     {
       "category": "Covers",
       "name": "Duplex receptacle cover",
       "unit": "each",
-      "price": 0.5,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/Duplex-receptacle-cover"
+      "price": 0.58,
+      "notes": "Leviton PJ8-W",
+      "url": "https://www.homedepot.com/s/Duplex-receptacle-cover",
+      "verified": true
     },
     {
       "category": "Covers",
       "name": "GFCI cover",
       "unit": "each",
       "price": 1.25,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/GFCI-cover"
+      "notes": "Estimate - not verified at Home Depot",
+      "url": "https://www.homedepot.com/s/GFCI-cover",
+      "verified": false
     },
     {
       "category": "Covers",
       "name": "Single pole + duplex combo cover",
       "unit": "each",
-      "price": 2.22,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/Single-pole-%2B-duplex-combo-cover"
+      "price": 1.98,
+      "notes": "Leviton 88005-W 2-gang toggle/duplex",
+      "url": "https://www.homedepot.com/s/Single-pole-%2B-duplex-combo-cover",
+      "verified": true
     },
     {
       "category": "Covers",
       "name": "Single switch cover",
       "unit": "each",
-      "price": 0.5,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/Single-switch-cover"
+      "price": 0.4,
+      "notes": "Leviton PJ1-WM, 10-pack unit price",
+      "url": "https://www.homedepot.com/s/Single-switch-cover",
+      "verified": true
     },
     {
       "category": "Covers",
       "name": "Triple switch cover",
       "unit": "each",
-      "price": 0.75,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/Triple-switch-cover"
+      "price": 3.61,
+      "notes": "Leviton 3-gang nylon plate",
+      "url": "https://www.homedepot.com/s/Triple-switch-cover",
+      "verified": true
     },
     {
       "category": "Lighting",
       "name": "Keyless light holder",
       "unit": "each",
       "price": 2.33,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/Keyless-light-holder"
+      "notes": "Leviton 8829-CW4",
+      "url": "https://www.homedepot.com/s/Keyless-light-holder",
+      "verified": true
     },
     {
       "category": "Lighting",
       "name": "Light bulb",
       "unit": "each",
       "price": 2.87,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/Light-bulb"
+      "notes": "Estimate - not verified at Home Depot",
+      "url": "https://www.homedepot.com/s/Light-bulb",
+      "verified": false
     },
     {
       "category": "Wire",
       "name": "1 ft 10/2 Romex",
       "unit": "ft",
-      "price": 1.2,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/1-ft-10%2F2-Romex"
+      "price": 1.23,
+      "notes": "Southwire 250 ft roll",
+      "url": "https://www.homedepot.com/s/1-ft-10%2F2-Romex",
+      "verified": true
     },
     {
       "category": "Wire",
       "name": "1 ft 10/3 Romex",
       "unit": "ft",
-      "price": 1.55,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/1-ft-10%2F3-Romex"
+      "price": 1.6,
+      "notes": "Southwire 250 ft roll",
+      "url": "https://www.homedepot.com/s/1-ft-10%2F3-Romex",
+      "verified": true
     },
     {
       "category": "Wire",
       "name": "1 ft 12/2 Romex",
       "unit": "ft",
-      "price": 1.24,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/1-ft-12%2F2-Romex"
+      "price": 0.72,
+      "notes": "Southwire 250 ft roll",
+      "url": "https://www.homedepot.com/s/1-ft-12%2F2-Romex",
+      "verified": true
     },
     {
       "category": "Wire",
       "name": "1 ft 12/3 Romex",
       "unit": "ft",
-      "price": 0.95,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/1-ft-12%2F3-Romex"
+      "price": 1.06,
+      "notes": "Southwire 250 ft roll",
+      "url": "https://www.homedepot.com/s/1-ft-12%2F3-Romex",
+      "verified": true
     },
     {
       "category": "Wire",
       "name": "1 ft 14/2 Romex",
       "unit": "ft",
-      "price": 0.32,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/1-ft-14%2F2-Romex"
+      "price": 0.5,
+      "notes": "Southwire 250 ft roll",
+      "url": "https://www.homedepot.com/s/1-ft-14%2F2-Romex",
+      "verified": true
     },
     {
       "category": "Wire",
       "name": "1 ft 14/3 Romex",
       "unit": "ft",
-      "price": 0.45,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/1-ft-14%2F3-Romex"
+      "price": 0.66,
+      "notes": "Southwire 250 ft roll",
+      "url": "https://www.homedepot.com/s/1-ft-14%2F3-Romex",
+      "verified": true
     },
     {
       "category": "Wire",
       "name": "1 ft 6/3 Romex",
       "unit": "ft",
-      "price": 3.25,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/1-ft-6%2F3-Romex"
+      "price": 3.97,
+      "notes": "Southwire 125 ft roll",
+      "url": "https://www.homedepot.com/s/1-ft-6%2F3-Romex",
+      "verified": true
     },
     {
       "category": "Wire",
       "name": "1 ft 8/2 Romex",
       "unit": "ft",
-      "price": 2,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/1-ft-8%2F2-Romex"
+      "price": 2.3,
+      "notes": "Southwire 125 ft roll",
+      "url": "https://www.homedepot.com/s/1-ft-8%2F2-Romex",
+      "verified": true
     },
     {
       "category": "Wire",
       "name": "1 ft 8/3 Romex",
       "unit": "ft",
-      "price": 2.6,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/1-ft-8%2F3-Romex"
+      "price": 2.76,
+      "notes": "Southwire 125 ft roll",
+      "url": "https://www.homedepot.com/s/1-ft-8%2F3-Romex",
+      "verified": true
     },
     {
       "category": "Wire",
       "name": "1 ft ground wire",
       "unit": "ft",
       "price": 0.47,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/1-ft-ground-wire"
+      "notes": "Estimate - not verified at Home Depot",
+      "url": "https://www.homedepot.com/s/1-ft-ground-wire",
+      "verified": false
     },
     {
       "category": "Wire",
       "name": "1 ft hot wire",
       "unit": "ft",
       "price": 0.18,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/1-ft-hot-wire"
+      "notes": "Estimate - not verified at Home Depot",
+      "url": "https://www.homedepot.com/s/1-ft-hot-wire",
+      "verified": false
     },
     {
       "category": "Wire",
       "name": "1 ft neutral wire",
       "unit": "ft",
       "price": 0.17,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/1-ft-neutral-wire"
+      "notes": "Estimate - not verified at Home Depot",
+      "url": "https://www.homedepot.com/s/1-ft-neutral-wire",
+      "verified": false
     },
     {
       "category": "Wire",
       "name": "1 ft power cord",
       "unit": "ft",
       "price": 1.85,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/1-ft-power-cord"
+      "notes": "Estimate - not verified at Home Depot",
+      "url": "https://www.homedepot.com/s/1-ft-power-cord",
+      "verified": false
     },
     {
       "category": "Conduit",
       "name": "1 ft 1-inch EMT pipe",
       "unit": "ft",
-      "price": 1.35,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/1-ft-1-inch-EMT-pipe"
+      "price": 1.8,
+      "notes": "$17.98 per 10 ft stick",
+      "url": "https://www.homedepot.com/s/1-ft-1-inch-EMT-pipe",
+      "verified": true
     },
     {
       "category": "Conduit",
       "name": "1 ft 1/2-inch EMT pipe",
       "unit": "ft",
-      "price": 0.7,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/1-ft-1%2F2-inch-EMT-pipe"
+      "price": 0.69,
+      "notes": "$6.91 per 10 ft stick",
+      "url": "https://www.homedepot.com/s/1-ft-1%2F2-inch-EMT-pipe",
+      "verified": true
     },
     {
       "category": "Conduit",
       "name": "1 ft 3/4-inch EMT pipe",
       "unit": "ft",
-      "price": 1,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/1-ft-3%2F4-inch-EMT-pipe"
+      "price": 1.15,
+      "notes": "$11.53 per 10 ft stick",
+      "url": "https://www.homedepot.com/s/1-ft-3%2F4-inch-EMT-pipe",
+      "verified": true
     },
     {
       "category": "Conduit",
       "name": "1-inch 1-hole clip",
       "unit": "each",
       "price": 0.41,
-      "notes": "",
-      "url": "https://www.homedepot.com/p/316097913"
+      "notes": "Estimate - not verified at Home Depot",
+      "url": "https://www.homedepot.com/p/316097913",
+      "verified": false
     },
     {
       "category": "Conduit",
       "name": "1-inch EMT connector",
       "unit": "each",
       "price": 1.35,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/1-inch-EMT-connector"
+      "notes": "Estimate - not verified at Home Depot",
+      "url": "https://www.homedepot.com/s/1-inch-EMT-connector",
+      "verified": false
     },
     {
       "category": "Conduit",
       "name": "1-inch EMT coupling",
       "unit": "each",
-      "price": 0.9,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/1-inch-EMT-coupling"
+      "price": 0.81,
+      "notes": "Halex 15-pack unit price",
+      "url": "https://www.homedepot.com/s/1-inch-EMT-coupling",
+      "verified": true
     },
     {
       "category": "Conduit",
       "name": "1-inch locknut",
       "unit": "each",
       "price": 0.66,
-      "notes": "",
-      "url": "https://www.homedepot.com/p/202241103"
+      "notes": "Estimate - not verified at Home Depot",
+      "url": "https://www.homedepot.com/p/202241103",
+      "verified": false
     },
     {
       "category": "Conduit",
       "name": "1-inch Mini clip",
       "unit": "each",
       "price": 0.35,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/1-inch-Mini-clip"
+      "notes": "Estimate - not verified at Home Depot",
+      "url": "https://www.homedepot.com/s/1-inch-Mini-clip",
+      "verified": false
     },
     {
       "category": "Conduit",
       "name": "1/2-inch 1-hole clip",
       "unit": "each",
       "price": 0.18,
-      "notes": "",
-      "url": "https://www.homedepot.com/p/316097971"
+      "notes": "Estimate - not verified at Home Depot",
+      "url": "https://www.homedepot.com/p/316097971",
+      "verified": false
     },
     {
       "category": "Conduit",
       "name": "1/2-inch EMT connector",
       "unit": "each",
-      "price": 0.8,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/1%2F2-inch-EMT-connector"
+      "price": 0.41,
+      "notes": "Halex 50-box unit price",
+      "url": "https://www.homedepot.com/s/1%2F2-inch-EMT-connector",
+      "verified": true
     },
     {
       "category": "Conduit",
       "name": "1/2-inch EMT coupling",
       "unit": "each",
-      "price": 0.5,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/1%2F2-inch-EMT-coupling"
+      "price": 0.4,
+      "notes": "50-pack unit price",
+      "url": "https://www.homedepot.com/s/1%2F2-inch-EMT-coupling",
+      "verified": true
     },
     {
       "category": "Conduit",
       "name": "1/2-inch locknut",
       "unit": "each",
       "price": 0.23,
-      "notes": "",
-      "url": "https://www.homedepot.com/b/Electrical-Electrical-Boxes-Conduit-Fittings-Conduit-Fittings/1-2/Locknut/N-5yc1vZbohkZ1z10wyuZ1z113et"
+      "notes": "Estimate - not verified at Home Depot",
+      "url": "https://www.homedepot.com/b/Electrical-Electrical-Boxes-Conduit-Fittings-Conduit-Fittings/1-2/Locknut/N-5yc1vZbohkZ1z10wyuZ1z113et",
+      "verified": false
     },
     {
       "category": "Conduit",
       "name": "1/2-inch Mini clip",
       "unit": "each",
       "price": 0.21,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/1%2F2-inch-Mini-clip"
+      "notes": "Estimate - not verified at Home Depot",
+      "url": "https://www.homedepot.com/s/1%2F2-inch-Mini-clip",
+      "verified": false
     },
     {
       "category": "Conduit",
       "name": "3/4-inch 1-hole clip",
       "unit": "each",
       "price": 0.27,
-      "notes": "",
-      "url": "https://www.homedepot.com/p/316097986"
+      "notes": "Estimate - not verified at Home Depot",
+      "url": "https://www.homedepot.com/p/316097986",
+      "verified": false
     },
     {
       "category": "Conduit",
       "name": "3/4-inch EMT connector",
       "unit": "each",
-      "price": 1,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/3%2F4-inch-EMT-connector"
+      "price": 0.78,
+      "notes": "25-pack unit price",
+      "url": "https://www.homedepot.com/s/3%2F4-inch-EMT-connector",
+      "verified": true
     },
     {
       "category": "Conduit",
       "name": "3/4-inch EMT coupling",
       "unit": "each",
-      "price": 0.7,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/3%2F4-inch-EMT-coupling"
+      "price": 0.51,
+      "notes": "Halex 25-pack unit price",
+      "url": "https://www.homedepot.com/s/3%2F4-inch-EMT-coupling",
+      "verified": true
     },
     {
       "category": "Conduit",
       "name": "3/4-inch locknut",
       "unit": "each",
       "price": 0.46,
-      "notes": "",
-      "url": "https://www.homedepot.com/b/Electrical-Electrical-Boxes-Conduit-Fittings-Conduit-Fittings/3-4/Locknut/N-5yc1vZbohkZ1z10wyuZ1z115w7"
+      "notes": "Estimate - not verified at Home Depot",
+      "url": "https://www.homedepot.com/b/Electrical-Electrical-Boxes-Conduit-Fittings-Conduit-Fittings/3-4/Locknut/N-5yc1vZbohkZ1z10wyuZ1z115w7",
+      "verified": false
     },
     {
       "category": "Conduit",
       "name": "3/4-inch Mini clip",
       "unit": "each",
       "price": 0.25,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/3%2F4-inch-Mini-clip"
+      "notes": "Estimate - not verified at Home Depot",
+      "url": "https://www.homedepot.com/s/3%2F4-inch-Mini-clip",
+      "verified": false
     },
     {
       "category": "Conduit",
       "name": "LFNC 90 connector",
       "unit": "each",
-      "price": 6,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/LFNC-90-connector"
+      "price": 6.58,
+      "notes": "1/2 in. 90 degree SNAP2IT",
+      "url": "https://www.homedepot.com/s/LFNC-90-connector",
+      "verified": true
     },
     {
       "category": "Conduit",
       "name": "LFNC connector",
       "unit": "each",
-      "price": 3,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/LFNC-connector"
+      "price": 3.09,
+      "notes": "Southwire 1/2 in. straight, 5-pack unit price",
+      "url": "https://www.homedepot.com/s/LFNC-connector",
+      "verified": true
     },
     {
       "category": "Conduit",
       "name": "Liquid-tight connector",
       "unit": "each",
-      "price": 2.8,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/Liquid-tight-connector"
+      "price": 3.98,
+      "notes": "Commercial Electric 1/2 in. straight",
+      "url": "https://www.homedepot.com/s/Liquid-tight-connector",
+      "verified": true
     },
     {
       "category": "Connectors",
       "name": "1/2-inch Romex connector",
       "unit": "each",
-      "price": 0.6,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/1%2F2-inch-Romex-connector"
+      "price": 0.31,
+      "notes": "Commercial Electric 100-pack unit price",
+      "url": "https://www.homedepot.com/s/1%2F2-inch-Romex-connector",
+      "verified": true
     },
     {
       "category": "Connectors",
       "name": "3/4-inch Romex connector",
       "unit": "each",
       "price": 0.85,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/3%2F4-inch-Romex-connector"
+      "notes": "Estimate - not verified at Home Depot",
+      "url": "https://www.homedepot.com/s/3%2F4-inch-Romex-connector",
+      "verified": false
     },
     {
       "category": "Connectors",
       "name": "Ground wire connector",
       "unit": "each",
       "price": 0.15,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/Ground-wire-connector"
+      "notes": "Estimate - not verified at Home Depot",
+      "url": "https://www.homedepot.com/s/Ground-wire-connector",
+      "verified": false
     },
     {
       "category": "Connectors",
       "name": "Wire nut - red/yellow/orange",
       "unit": "each",
-      "price": 0.17,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/Wire-nut---red%2Fyellow%2Forange"
+      "price": 0.05,
+      "notes": "Commercial Electric 360-pack unit price",
+      "url": "https://www.homedepot.com/s/Wire-nut---red%2Fyellow%2Forange",
+      "verified": true
     },
     {
       "category": "Fasteners",
       "name": "6-32 nut",
       "unit": "each",
       "price": 6.2,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/6-32-nut"
+      "notes": "Looks like a pack price; check | Estimate - not verified at Home Depot",
+      "url": "https://www.homedepot.com/s/6-32-nut",
+      "verified": false
     },
     {
       "category": "Fasteners",
       "name": "6-32 screw",
       "unit": "each",
       "price": 0.18,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/6-32-screw"
+      "notes": "Estimate - not verified at Home Depot",
+      "url": "https://www.homedepot.com/s/6-32-screw",
+      "verified": false
     },
     {
       "category": "Fasteners",
       "name": "8-32 screw",
       "unit": "each",
       "price": 0.17,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/8-32-screw"
+      "notes": "Estimate - not verified at Home Depot",
+      "url": "https://www.homedepot.com/s/8-32-screw",
+      "verified": false
     },
     {
       "category": "Fasteners",
       "name": "Grounding screw",
       "unit": "each",
       "price": 0.1,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/Grounding-screw"
+      "notes": "Estimate - not verified at Home Depot",
+      "url": "https://www.homedepot.com/s/Grounding-screw",
+      "verified": false
     },
     {
       "category": "Fasteners",
       "name": "Machine screw assorted",
       "unit": "each",
       "price": 0.05,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/Machine-screw-assorted"
+      "notes": "Estimate - not verified at Home Depot",
+      "url": "https://www.homedepot.com/s/Machine-screw-assorted",
+      "verified": false
     },
     {
       "category": "Fasteners",
       "name": "NM cable staple",
       "unit": "each",
-      "price": 0.03,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/NM-cable-staple"
+      "price": 0.01,
+      "notes": "Southwire 500-pack $6.78",
+      "url": "https://www.homedepot.com/s/NM-cable-staple",
+      "verified": true
     },
     {
       "category": "Fasteners",
       "name": "Sheet-metal screw",
       "unit": "each",
       "price": 0.06,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/Sheet-metal-screw"
+      "notes": "Estimate - not verified at Home Depot",
+      "url": "https://www.homedepot.com/s/Sheet-metal-screw",
+      "verified": false
     },
     {
       "category": "Fasteners",
       "name": "Wood screw",
       "unit": "each",
       "price": 0.14,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/Wood-screw"
+      "notes": "Estimate - not verified at Home Depot",
+      "url": "https://www.homedepot.com/s/Wood-screw",
+      "verified": false
     },
     {
       "category": "Protection",
       "name": "15A breaker",
       "unit": "each",
-      "price": 7.87,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/15A-breaker"
+      "price": 7.26,
+      "notes": "Square D Homeline HOM115CP",
+      "url": "https://www.homedepot.com/s/15A-breaker",
+      "verified": true
     },
     {
       "category": "Protection",
       "name": "20A breaker",
       "unit": "each",
-      "price": 7.33,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/20A-breaker"
+      "price": 7.26,
+      "notes": "Square D Homeline HOM120CP",
+      "url": "https://www.homedepot.com/s/20A-breaker",
+      "verified": true
     },
     {
       "category": "Protection",
       "name": "30A breaker",
       "unit": "each",
-      "price": 10,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/30A-breaker"
+      "price": 18.24,
+      "notes": "Square D Homeline HOM230CP (2-pole)",
+      "url": "https://www.homedepot.com/s/30A-breaker",
+      "verified": true
     },
     {
       "category": "Protection",
       "name": "40A breaker",
       "unit": "each",
-      "price": 12,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/40A-breaker"
+      "price": 18.24,
+      "notes": "Square D Homeline HOM240CP (2-pole)",
+      "url": "https://www.homedepot.com/s/40A-breaker",
+      "verified": true
     },
     {
       "category": "Protection",
       "name": "50A breaker",
       "unit": "each",
-      "price": 15,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/50A-breaker"
+      "price": 18.24,
+      "notes": "Square D Homeline HOM250CP (2-pole)",
+      "url": "https://www.homedepot.com/s/50A-breaker",
+      "verified": true
     },
     {
       "category": "Specialty",
       "name": "Blank Mulberry",
       "unit": "each",
       "price": 1.85,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/Blank-Mulberry"
+      "notes": "Estimate - not verified at Home Depot",
+      "url": "https://www.homedepot.com/s/Blank-Mulberry",
+      "verified": false
     },
     {
       "category": "Specialty",
       "name": "Double-switch Mulberry",
       "unit": "each",
       "price": 2.65,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/Double-switch-Mulberry"
+      "notes": "Estimate - not verified at Home Depot",
+      "url": "https://www.homedepot.com/s/Double-switch-Mulberry",
+      "verified": false
     },
     {
       "category": "Specialty",
       "name": "Duplex Mulberry",
       "unit": "each",
       "price": 3.96,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/Duplex-Mulberry"
+      "notes": "Estimate - not verified at Home Depot",
+      "url": "https://www.homedepot.com/s/Duplex-Mulberry",
+      "verified": false
     },
     {
       "category": "Specialty",
       "name": "Panel box / load center",
       "unit": "each",
-      "price": 28.98,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/Panel-box-%2F-load-center"
+      "price": 113.88,
+      "notes": "Square D Homeline 100A 20-space HOM2040M100PC",
+      "url": "https://www.homedepot.com/s/Panel-box-%2F-load-center",
+      "verified": true
     },
     {
       "category": "Specialty",
       "name": "Panel cover",
       "unit": "each",
       "price": 12,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/Panel-cover"
+      "notes": "Estimate - not verified at Home Depot",
+      "url": "https://www.homedepot.com/s/Panel-cover",
+      "verified": false
     },
     {
       "category": "Specialty",
       "name": "Single-pole switch Mulberry",
       "unit": "each",
       "price": 0.52,
-      "notes": "",
-      "url": "https://www.homedepot.com/s/Single-pole-switch-Mulberry"
+      "notes": "Estimate - not verified at Home Depot",
+      "url": "https://www.homedepot.com/s/Single-pole-switch-Mulberry",
+      "verified": false
     }
   ],
   "tools": [
@@ -686,7 +768,6 @@
     "Hammer",
     "Utility knife",
     "Pencil / marker",
-    "Level",
     "Stud finder",
     "Flashlight",
     "Ladder",
@@ -699,5 +780,7 @@
     "Hard hat",
     "Tool bag"
   ],
-  "version": "1.3.0"
+  "version": "1.4.0",
+  "priceSource": "Home Depot",
+  "pricesUpdated": "2026-10-01"
 }
