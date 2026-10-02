@@ -127,21 +127,37 @@ function autocompleteInput(value, values) {
 }
 
 function materialInput(selected = "", index = 0) {
+  const categories = [...new Set(MATERIALS.map(m => m.category))];
+  const grouped = categories.map(category => {
+    const items = MATERIALS.filter(m => m.category === category);
+    return `
+      <div class="material-option-group">
+        <div class="material-option-category">${esc(category)}</div>
+        ${items.map(material => `
+          <button type="button" class="material-option" data-value="${esc(material.name)}">
+            ${esc(material.name)}
+          </button>
+        `).join("")}
+      </div>
+    `;
+  }).join("");
+
   return `
-    <input
-      type="text"
-      class="material-input"
-      data-i="${index}"
-      value="${esc(selected)}"
-      list="material-options-${index}"
-      placeholder=""
-      autocomplete="on"
-    >
-    <datalist id="material-options-${index}">
-      ${MATERIALS.map(material => `
-        <option value="${esc(material.name)}" label="${esc(material.category)}"></option>
-      `).join("")}
-    </datalist>
+    <div class="material-picker">
+      <input
+        type="text"
+        class="material-input"
+        data-i="${index}"
+        value="${esc(selected)}"
+        placeholder=""
+        autocomplete="off"
+        aria-autocomplete="list"
+        aria-expanded="false"
+      >
+      <div class="material-dropdown" data-i="${index}" hidden>
+        ${grouped}
+      </div>
+    </div>
   `;
 }
 
@@ -294,87 +310,143 @@ function updateTotals() {
    MATERIAL TABLE EVENTS
 ========================================================= */
 
+function showMaterialDropdown(input) {
+  const picker = input.closest(".material-picker");
+  const dropdown = picker?.querySelector(".material-dropdown");
+  if (!dropdown) return;
+  dropdown.hidden = false;
+  input.setAttribute("aria-expanded", "true");
+  filterMaterialDropdown(input);
+}
+
+function hideMaterialDropdown(input) {
+  const picker = input.closest(".material-picker");
+  const dropdown = picker?.querySelector(".material-dropdown");
+  if (!dropdown) return;
+  dropdown.hidden = true;
+  input.setAttribute("aria-expanded", "false");
+}
+
+function filterMaterialDropdown(input) {
+  const picker = input.closest(".material-picker");
+  const dropdown = picker?.querySelector(".material-dropdown");
+  if (!dropdown) return;
+
+  const query = input.value.trim().toLowerCase();
+  dropdown.querySelectorAll(".material-option-group").forEach(group => {
+    let visible = 0;
+    group.querySelectorAll(".material-option").forEach(option => {
+      const match = !query || option.textContent.toLowerCase().includes(query);
+      option.hidden = !match;
+      if (match) visible++;
+    });
+    group.hidden = visible === 0;
+  });
+}
+
+function chooseMaterial(input, value) {
+  const index = Number(input.dataset.i);
+  input.value = value;
+  if (!Number.isNaN(index)) {
+    state.rows[index].material = value;
+  }
+  hideMaterialDropdown(input);
+  updateTotals();
+}
+
 function setupMaterialEvents() {
   const body = $("materialBody");
-
   if (!body) return;
 
   body.addEventListener("input", event => {
     const index = Number(event.target.dataset.i);
-
     if (Number.isNaN(index)) return;
 
     if (event.target.classList.contains("qty-input")) {
       state.rows[index].qty = event.target.value;
+      updateTotals();
     }
 
     if (event.target.classList.contains("material-input")) {
       state.rows[index].material = event.target.value;
+      showMaterialDropdown(event.target);
+      filterMaterialDropdown(event.target);
+      updateTotals();
     }
 
     if (event.target.classList.contains("tool-input")) {
       state.rows[index].tool = event.target.value;
+      updateTotals();
     }
+  });
 
-    updateTotals();
+  body.addEventListener("focusin", event => {
+    if (event.target.classList.contains("material-input")) {
+      showMaterialDropdown(event.target);
+      filterMaterialDropdown(event.target);
+    }
+  });
+
+  body.addEventListener("focusout", event => {
+    if (!event.target.classList.contains("material-input")) return;
+    setTimeout(() => {
+      if (!event.target.closest(".material-picker")?.contains(document.activeElement)) {
+        hideMaterialDropdown(event.target);
+      }
+    }, 120);
+  });
+
+  body.addEventListener("mousedown", event => {
+    const option = event.target.closest(".material-option");
+    if (!option) return;
+    event.preventDefault();
+    const input = option.closest(".material-picker")?.querySelector(".material-input");
+    if (input) chooseMaterial(input, option.dataset.value);
   });
 
   body.addEventListener("change", event => {
     const index = Number(event.target.dataset.i);
-
     if (Number.isNaN(index)) return;
 
-    if (event.target.classList.contains("material-input")) {
-      state.rows[index].material = completeInput(
-        event.target,
-        materialValues()
-      );
-    }
-
     if (event.target.classList.contains("tool-input")) {
-      state.rows[index].tool = completeInput(
-        event.target,
-        toolValues()
-      );
+      state.rows[index].tool = completeInput(event.target, toolValues());
+      updateTotals();
     }
-
-    updateTotals();
   });
 
   body.addEventListener("keydown", event => {
     if (
       !event.target.classList.contains("material-input") &&
       !event.target.classList.contains("tool-input")
-    ) {
-      return;
-    }
+    ) return;
 
-    if (event.key !== "Tab" && event.key !== "Enter") {
-      return;
-    }
-
-    const values = event.target.classList.contains("material-input")
-      ? materialValues()
-      : toolValues();
-
-    const completed = completeInput(event.target, values);
-    const index = Number(event.target.dataset.i);
-
-    if (!Number.isNaN(index)) {
-      if (event.target.classList.contains("material-input")) {
-        state.rows[index].material = completed;
-      } else {
-        state.rows[index].tool = completed;
+    if (event.target.classList.contains("material-input")) {
+      const dropdown = event.target.closest(".material-picker")?.querySelector(".material-dropdown");
+      if (event.key === "Enter" || event.key === "Tab") {
+        const first = dropdown?.querySelector(".material-option:not([hidden])");
+        if (first) {
+          chooseMaterial(event.target, first.dataset.value);
+          if (event.key === "Enter") event.preventDefault();
+        }
+      } else if (event.key === "Escape") {
+        hideMaterialDropdown(event.target);
       }
+      return;
+    }
+
+    if (event.key !== "Tab" && event.key !== "Enter") return;
+
+    const completed = completeInput(event.target, toolValues());
+    const index = Number(event.target.dataset.i);
+    if (!Number.isNaN(index)) {
+      state.rows[index].tool = completed;
       updateTotals();
     }
 
-    // Enter confirms the autocomplete without submitting anything.
     if (event.key === "Enter") {
       event.preventDefault();
       event.target.dispatchEvent(new Event("change", { bubbles: true }));
     }
-    // Tab is intentionally not prevented, so focus moves to the next field.
   });
 }
 
