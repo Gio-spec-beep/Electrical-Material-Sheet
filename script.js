@@ -730,6 +730,69 @@ function fracString(x){const sign=x<0?"-":"",den=10000,n=Math.round(Math.abs(x)*
 function calcFrac(){const a=parseFrac($("frac1").value),b=parseFrac($("frac2").value),op=$("fracOp").value;if(a===null||b===null||(op==="/"&&b===0)){cres("fracResult","Check fractions",["Use 3/4 or 1 1/2. Division by zero is not allowed."]);return;}const x=op==="+"?a+b:op==="-"?a-b:op==="*"?a*b:a/b;cres("fracResult","Fraction Result",[`${fracString(x)}`,`Decimal = ${cf(x,4)}`]);}
 function setupCalculators(){fillCalcSelects();const a={ohm:calcOhm,power:calcPower,voltageDrop:calcVD,ampacity:calcAmp,conduitFill:calcCF,boxFill:calcBF,series:calcSeries,parallel:calcParallel,motor:calcMotor,load:calcLoad,units:calcUnits,fraction:calcFrac};document.querySelectorAll(".calc-btn").forEach(b=>b.addEventListener("click",()=>a[b.dataset.calc]?.()));document.querySelectorAll("#calculations input").forEach(i=>i.addEventListener("keydown",e=>{if(e.key==="Enter"){e.preventDefault();i.closest(".calculator-card")?.querySelector(".calc-btn")?.click();}}));}
 
+
+/* NEC CODEBOOK STUDY GUIDE — summaries are paraphrased, not code text */
+const NEC_GUIDE=[
+{a:"90",t:"Introduction",c:"general",d:"Explains the purpose, scope, arrangement, and enforcement context of the NEC. Article 90 is useful for understanding what the Code is intended to cover and what it does not cover.",k:"scope purpose arrangement authority"},
+{a:"100",t:"Definitions",c:"general",d:"Defines terms used throughout the NEC. Check this article when a word has a specific code meaning or when an assignment asks what a term means.",k:"definitions terms service feeder branch circuit accessible readily accessible"},
+{a:"110",t:"Requirements for Electrical Installations",c:"general",d:"General installation rules, including equipment examination, ratings, working space, access, markings, and connections. Use the specific section and any applicable exceptions.",k:"working space clearances labels terminals ratings installation"},
+{a:"200",t:"Use and Identification of Grounded Conductors",c:"wiring",d:"Covers identification and use of grounded conductors, commonly the neutral in many AC systems. Look here for conductor identification rules.",k:"neutral grounded conductor white gray identification"},
+{a:"210",t:"Branch Circuits",c:"wiring",d:"Rules for branch circuits, including ratings, required circuits, receptacle placement, and branch-circuit protection. Commonly used in residential wiring assignments.",k:"branch circuit receptacle outlets kitchen bathroom dwelling gfci afci"},
+{a:"215",t:"Feeders",c:"wiring",d:"Covers feeder conductors and feeder overcurrent protection. Use it when tracing power from service equipment toward downstream distribution equipment.",k:"feeder ampacity overcurrent conductor"},
+{a:"220",t:"Branch-Circuit, Feeder, and Service Load Calculations",c:"tables",d:"Provides methods for calculating electrical loads. Different occupancies and load types can have specific calculation rules, demand factors, and exceptions.",k:"load calculation demand factor dwelling service feeder"},
+{a:"225",t:"Outside Branch Circuits and Feeders",c:"special",d:"Addresses outside branch circuits and feeders, including certain building-to-building and outdoor wiring situations.",k:"outside overhead outdoor building feeder"},
+{a:"230",t:"Services",c:"equipment",d:"Covers service conductors and service equipment from the service point into the premises wiring system. Useful for service entrance and service disconnect study.",k:"service entrance service disconnect conductors"},
+{a:"240",t:"Overcurrent Protection",c:"equipment",d:"Covers fuses, circuit breakers, conductor protection, and overcurrent device rules. Coordinate conductor sizing with the applicable ampacity and equipment rules.",k:"breaker fuse overcurrent protection"},
+{a:"250",t:"Grounding and Bonding",c:"equipment",d:"Explains system grounding, equipment grounding, bonding, grounding electrodes, and related connections. Distinguish the grounded conductor from the equipment grounding conductor.",k:"grounding bonding ground rod equipment grounding conductor neutral"},
+{a:"300",t:"General Requirements for Wiring Methods and Materials",c:"wiring",d:"General rules applying to wiring methods and materials, including protection from physical damage, securing, supporting, and installation conditions.",k:"wiring methods support protection physical damage"},
+{a:"310",t:"Conductors for General Wiring",c:"tables",d:"Covers conductor requirements and ampacity information. Conductor selection can depend on insulation rating, terminal temperature, ambient temperature, and the number of current-carrying conductors.",k:"wire ampacity conductor insulation temperature correction adjustment"},
+{a:"312",t:"Cabinets, Cutout Boxes, and Meter Socket Enclosures",c:"equipment",d:"Rules for cabinets and enclosures such as certain panel and meter equipment. Check the equipment type and installation conditions.",k:"cabinet panel enclosure meter socket"},
+{a:"314",t:"Outlet, Device, Pull, and Junction Boxes; Conduit Bodies; Fittings",c:"equipment",d:"Covers boxes and conduit bodies, including box fill, installation, support, and accessible-cover rules. Section 314.16 is commonly assigned for box-fill calculations.",k:"box fill outlet box junction box device box cubic inch 314.16"},
+{a:"320",t:"Armored Cable (Type AC)",c:"wiring",d:"Requirements for Type AC cable. Compare cable types carefully; similar-looking cable products can have different rules.",k:"armored cable AC"},
+{a:"330",t:"Metal-Clad Cable (Type MC)",c:"wiring",d:"Requirements for Type MC cable, including installation and use conditions. Do not assume MC and AC cable rules are interchangeable.",k:"metal clad cable MC"},
+{a:"334",t:"Nonmetallic-Sheathed Cable (Type NM)",c:"wiring",d:"Rules for nonmetallic-sheathed cable such as common NM-B cable, including permitted uses, protection, support, and installation.",k:"Romex NM NM-B nonmetallic sheathed cable staples"},
+{a:"338",t:"Service-Entrance Cable (Types SE and USE)",c:"wiring",d:"Covers service-entrance cable types and their permitted applications. Check the exact cable type and location before applying a rule.",k:"SE USE service entrance cable"},
+{a:"342",t:"Intermediate Metal Conduit (Type IMC)",c:"wiring",d:"Covers IMC conduit systems, fittings, and installation requirements.",k:"IMC conduit fittings"},
+{a:"344",t:"Rigid Metal Conduit (Type RMC)",c:"wiring",d:"Covers rigid metal conduit and associated fittings and installation requirements.",k:"RMC rigid metal conduit"},
+{a:"348",t:"Flexible Metal Conduit (Type FMC)",c:"wiring",d:"Covers flexible metal conduit, including use limitations and installation methods.",k:"FMC flexible metal conduit"},
+{a:"350",t:"Liquidtight Flexible Nonmetallic Conduit (Type LFNC)",c:"wiring",d:"Covers liquidtight flexible nonmetallic conduit and fittings, including where and how the raceway may be used.",k:"LFNC liquidtight flexible nonmetallic conduit"},
+{a:"352",t:"Rigid Polyvinyl Chloride Conduit (Type PVC)",c:"wiring",d:"Covers PVC conduit, fittings, support, and installation conditions. Check the schedule/type and environment.",k:"PVC conduit schedule 40 80"},
+{a:"358",t:"Electrical Metallic Tubing (EMT)",c:"wiring",d:"Covers EMT, fittings, and installation requirements. Frequently referenced for conduit runs, supports, and fittings in shop class.",k:"EMT electrical metallic tubing connectors couplings straps"},
+{a:"404",t:"Switches",c:"equipment",d:"Covers switches and switch installations, including certain enclosure, rating, and connection requirements.",k:"switch single pole three way 3-way disconnect"},
+{a:"406",t:"Receptacles, Cord Connectors, and Attachment Plugs",c:"equipment",d:"Covers receptacle and plug-related requirements, including ratings, grounding, tamper resistance, weather resistance, and placement in applicable situations.",k:"receptacle outlet duplex GFCI tamper resistant weather resistant"},
+{a:"408",t:"Switchboards, Switchgear, and Panelboards",c:"equipment",d:"Covers panelboards and related distribution equipment, including circuit identification and installation rules.",k:"panelboard panel schedule breaker directory switchboard"},
+{a:"410",t:"Luminaires, Lampholders, and Lamps",c:"equipment",d:"Covers lighting equipment such as luminaires, lampholders, and lamps, including mounting and installation conditions.",k:"lighting fixture luminaire lampholder keyless"},
+{a:"422",t:"Appliances",c:"equipment",d:"Covers electrical appliances and their branch circuits, connections, disconnecting means, and installation conditions.",k:"appliance dishwasher range water heater"},
+{a:"430",t:"Motors, Motor Circuits, and Controllers",c:"equipment",d:"A major motor article covering motor circuit conductors, overloads, short-circuit and ground-fault protection, controllers, and disconnecting means. Follow the correct motor table and calculation steps.",k:"motor horsepower FLA overload conductor starter controller disconnect"},
+{a:"440",t:"Air-Conditioning and Refrigerating Equipment",c:"equipment",d:"Covers air-conditioning and refrigeration equipment, including nameplate-based circuit and overcurrent requirements.",k:"HVAC compressor air conditioning refrigerant"},
+{a:"450",t:"Transformers and Transformer Vaults",c:"equipment",d:"Covers transformer installations and related overcurrent protection and installation conditions.",k:"transformer primary secondary kVA overcurrent"},
+{a:"500",t:"Hazardous (Classified) Locations",c:"special",d:"Introduces requirements for locations where flammable gases, vapors, dusts, or fibers may create special electrical hazards. Classification must be established correctly.",k:"hazardous classified class division zone"},
+{a:"590",t:"Temporary Installations",c:"special",d:"Covers temporary electrical installations for construction, remodeling, events, and similar situations, including limits and protection.",k:"temporary construction jobsite"},
+{a:"600",t:"Electric Signs and Outline Lighting",c:"special",d:"Covers electric signs and outline lighting systems and their installation requirements.",k:"sign lighting"},
+{a:"625",t:"Electric Vehicle Power Transfer System",c:"special",d:"Covers EV charging and power-transfer equipment. Check the edition and equipment configuration for current requirements.",k:"EV charger electric vehicle"},
+{a:"680",t:"Swimming Pools, Fountains, and Similar Installations",c:"special",d:"Covers electrical installations around pools, fountains, and similar bodies of water, where shock protection and bonding are especially important.",k:"pool fountain spa bonding GFCI"},
+{a:"690",t:"Solar Photovoltaic (PV) Systems",c:"special",d:"Covers photovoltaic systems, including PV circuit conductors, disconnects, and related equipment. Follow the applicable system diagrams and edition.",k:"solar photovoltaic PV inverter"},
+{a:"700",t:"Emergency Systems",c:"special",d:"Covers electrical systems intended to supply designated emergency loads. Distinguish emergency systems from other standby systems.",k:"emergency generator life safety"},
+{a:"702",t:"Optional Standby Systems",c:"special",d:"Covers optional standby systems that provide alternate power for selected loads. Compare requirements with Article 700 and other standby articles.",k:"standby generator backup power"},
+{a:"725",t:"Class 1, Class 2, and Class 3 Remote-Control, Signaling, and Power-Limited Circuits",c:"special",d:"Covers certain control, signaling, and power-limited circuits. Circuit classification affects wiring methods and separation rules.",k:"low voltage control signaling class 2"},
+{a:"760",t:"Fire Alarm Systems",c:"special",d:"Covers fire alarm system wiring and equipment. Coordinate with applicable fire alarm standards and local requirements taught in class.",k:"fire alarm notification initiating"},
+{a:"800",t:"Communications Circuits",c:"special",d:"Covers communications circuit wiring, cable, and installation conditions. Check the applicable rules for the specific communications system.",k:"communications data telephone"},
+{a:"Chapter 9",t:"Tables",c:"tables",d:"Contains important wiring tables, including conduit and tubing dimensions/areas and raceway fill information. Always confirm the correct table, notes, conductor insulation, and number of conductors.",k:"conduit fill table raceway dimensions conductor area Chapter 9"},
+{a:"Annex C",t:"Conduit and Tubing Fill Tables",c:"tables",d:"Annex C contains fill tables for specified raceways and conductor combinations in many editions. Confirm the exact annex/table in your assigned edition and the conditions under which it applies.",k:"Annex C conduit fill table EMT PVC"}
+];
+function renderCodebook(){
+ const list=$("codeArticleList"),detail=$("codeArticleDetail");if(!list||!detail)return;
+ const query=($("codeSearch").value||"").toLowerCase().trim(),cat=$("codeCategory").value;
+ const filtered=NEC_GUIDE.filter(x=>(cat==="all"||x.c===cat)&&[x.a,x.t,x.d,x.k].join(" ").toLowerCase().includes(query));
+ if(!filtered.length){list.innerHTML='<p class="muted">No matching articles. Try another keyword.</p>';return;}
+ if(!list.dataset.selected||!filtered.some(x=>x.a===list.dataset.selected))list.dataset.selected=filtered[0].a;
+ list.innerHTML=filtered.map(x=>'<button type="button" class="code-article-item '+(x.a===list.dataset.selected?'active':'')+'" data-article="'+esc(x.a)+'"><span class="code-article-number">Article '+esc(x.a)+'</span><span class="code-article-title">'+esc(x.t)+'</span></button>').join("");
+ const chosen=filtered.find(x=>x.a===list.dataset.selected)||filtered[0];
+ detail.innerHTML='<p class="eyebrow">NEC STUDY GUIDE</p><h3>Article '+esc(chosen.a)+'</h3><h4>'+esc(chosen.t)+'</h4><p>'+esc(chosen.d)+'</p><div class="codebook-keywords"><strong>Search keywords</strong><p>'+esc(chosen.k.split(" ").join(" · "))+'</p></div><div class="codebook-prompt"><strong>When studying this article</strong><ol><li>Find the article in your assigned NEC edition.</li><li>Read the applicable section and any exceptions or table notes.</li><li>Write down the rule in your own words and cite the section number.</li></ol></div>';
+ list.querySelectorAll("[data-article]").forEach(b=>b.addEventListener("click",()=>{list.dataset.selected=b.dataset.article;renderCodebook();}));
+}
+function setupCodebook(){if(!$("codeArticleList"))return;$("codeSearch").addEventListener("input",renderCodebook);$("codeCategory").addEventListener("change",renderCodebook);renderCodebook();}
+
 /* =========================================================
    INITIALIZATION
 ========================================================= */
@@ -748,6 +811,7 @@ async function init() {
   setupNavigation();
   setupPriceSearch();
   setupCalculators();
+  setupCodebook();
 
   // Load database FIRST
   await loadDatabase();
