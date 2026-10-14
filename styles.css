@@ -792,3 +792,26 @@ select{
 .calc-result strong{color:var(--blue);font-size:11px}
 @media(max-width:800px){.calculator-grid{grid-template-columns:1fr}.calc-fields{grid-template-columns:1fr}}
 @media print{#calculations{display:none!important}}
+
+
+/* TABBED NEC CODEBOOK GUIDE */
+.codebook-notice{padding:12px 14px;background:#fff7ed;border:1px solid #fed7aa;border-radius:7px;color:#7c2d12;font-size:11px;line-height:1.55;margin-bottom:14px}
+.codebook-tools{display:grid;grid-template-columns:minmax(0,2fr) minmax(180px,1fr);gap:10px;margin-bottom:14px}
+.codebook-tools input,.codebook-tools select{width:100%;min-height:38px;border:1px solid var(--line);border-radius:6px;padding:8px 10px;background:#fff;color:var(--ink);font-size:12px}
+.codebook-layout{display:grid;grid-template-columns:minmax(230px, .85fr) minmax(0,2fr);gap:14px;align-items:start}
+.code-article-list{display:flex;flex-direction:column;max-height:660px;overflow:auto;border:1px solid var(--line);border-radius:8px;background:#fff}
+.code-article-item{display:flex;flex-direction:column;gap:3px;text-align:left;padding:10px 12px;border:0;border-bottom:1px solid #e5e7eb;background:#fff;cursor:pointer;color:var(--ink)}
+.code-article-item:hover{background:#f8fafc}
+.code-article-item.active{background:#eff6ff;border-left:3px solid var(--blue);padding-left:9px}
+.code-article-number{font-size:10px;font-weight:800;color:var(--blue)}
+.code-article-title{font-size:11px;line-height:1.4}
+.code-article-detail{min-height:280px;padding:20px;background:#fff;border:1px solid var(--line);border-radius:8px;line-height:1.65}
+.code-article-detail h3{font-size:22px;color:var(--blue);margin:2px 0}
+.code-article-detail h4{font-size:15px;margin:0 0 14px}
+.code-article-detail p{font-size:12px}
+.codebook-keywords,.codebook-prompt{margin-top:18px;padding:12px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:6px;font-size:11px}
+.codebook-keywords p{margin:5px 0 0;color:#475569}
+.codebook-prompt ol{padding-left:20px;margin:8px 0 0}
+.codebook-footnote{font-size:11px;color:var(--muted);margin-top:12px}
+@media(max-width:760px){.codebook-layout{grid-template-columns:1fr}.code-article-list{max-height:300px}.codebook-tools{grid-template-columns:1fr}}
+@media print{#codebook{display:none!important}}
